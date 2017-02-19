@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="#BDBDBD"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.somesh.viewbhopal.neo">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/neo"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:scaleType="centerCrop"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Address:-"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:id="@+id/head1"
+                android:paddingTop="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:layout_below="@id/head1"
+                android:text="Neori Mandir Rd, Bhopal."
+                android:id="@+id/drop1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Opening Hours:-"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:paddingTop="20dp"
+                android:textStyle="bold"
+                android:id="@+id/head2"
+                android:layout_below="@id/drop1"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:layout_below="@id/head2"
+                android:text="All days of the week.\n08:00AM to 5.00PM"
+                android:id="@+id/drop2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="About:-"
+                android:textColor="#000000"
+                android:paddingTop="20dp"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:id="@+id/head3"
+                android:layout_below="@id/drop1"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:layout_below="@id/head3"
+                android:text="Shiva meaning 'The Auspicious One' is one of the three major deities of Hinduism. He is the chief deity within Shaivism, one of the three most influential denominations in contemporary Hinduism.He is one of the five primary forms of God in the Smarta Tradition,and,At the highest level,Shiva is regarded as limitless, transcendent, unchanging and formless.Shiva also has many benevolent and fearsome forms.\n\t\t\t\t\tIn benevolent aspects, he is depicted as an omniscient Yogi who lives an ascetic life on Mount Kailash,as well as a householder with wife Parvati and his two children, Ganesha and Kartikeya, and in fierce aspects, he is often depicted slaying demons. Shiva is also regarded as the patron god of yoga and arts."
+                android:id="@+id/drop3" />
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

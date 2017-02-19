@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="#BDBDBD"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".birla">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/laxmi"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:scaleType="centerCrop"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Address:-"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:id="@+id/head1"
+                android:paddingTop="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:layout_below="@id/head1"
+                android:text="Arera Hills, Bhopal."
+                android:id="@+id/drop1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Opening Hours:-"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:paddingTop="20dp"
+                android:textStyle="bold"
+                android:id="@+id/head2"
+                android:layout_below="@id/drop1"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:layout_below="@id/head2"
+                android:text="All days of the week.\n08:00AM to 12:00PM\n02:00PM to 06:00PM"
+                android:id="@+id/drop2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="About:-"
+                android:textColor="#000000"
+                android:paddingTop="20dp"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:id="@+id/head3"
+                android:layout_below="@id/drop1"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:layout_below="@id/head3"
+                android:text="The breath taking view of lower lake and the peace of heaven are the main attractions of this temple. Situated on the top Arera Hills, Laxmi Narayan temple is one of the finest example of contemporary temple art in India. Also known as the Birla Mandir it is devoted to the Goddess of prosperity, Laxmi.\n\tApart from Goddess Lakshmi and her heavenly consort, Vishnu, you can also find idols of Lord Shiva with his wife Parvathi in the temple.The glorious archway mark the entry to this famous temple which attains festive look on the eve of Lakshmi Puja."
+                android:id="@+id/drop3" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Map"
+                android:onClick="mapAction"
+                android:id="@+id/mapButton"
+                android:layout_below="@+id/drop3"
+                android:layout_centerHorizontal="true" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

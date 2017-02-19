@@ -1,0 +1,117 @@
+<resources>
+    <string name="app_name">ViewBhopal</string>
+
+    <string name="bheem">Further down south-east, you will find a historic site hedged by the Vindhya Ranges. Bhimbetka consists of 600 rock shelters dating back to 5,500-1,000 BCE. Set in the middle of the Ratapani Sanctuary (famous for its leopards, jackals and sloth bears), the shelters stretch for some 10 km. Here lies South Asia’s richest collection of prehistoric paintings. The etchings depict the lives of the cave dwellers — they are executed in a colourful medley of reds, greens, yellows and whites.
+
+Scenes of hunting, dancing, horse and elephant rides, animal fights, masks and household tableaux, chronicle lives long gone. Interestingly, the top crust in some paintings shows that the walls were repeatedly used. Fortunately, the colours have remained intact — thanks to the chemical reaction from the oxide present on the surface of the rocks.
+</string>
+    <string name="stoop">India’s oldest stone structure, commissioned into existence by Emperor Ashoka and built over the remains of Buddha in a glorious endeavor to honour them, Sanchi Stupa is a magnificent exemplar of not just Buddhist and Mauryan art and architecture, but also of faith and reverence. While its foundation was overlain by Emperor Ashoka in 3rd century BCE, it was actually his wife, Queen Devi, a native of Sanchi, who eventually oversaw its establishment.
+
+
+The initial structure was half the size of the present edifice, enclosed with railings made of wood and crowned with a stone umbrella-like structure, known as chatra that symbolises high rank. Gradually, over the centuries that followed and as different dynasties crossed its path, the Stupa and the region surrounding it grew and developed into the grand, illustrious heritage site that it is now.
+
+
+A World Heritage site, Sanchi Stupaessentially refers to Stupa 1, known more fittingly as the Great Stupa. Surrounding it is Stupa 3, the Ashokan pillar, Temple 18 from the Mauryan era and Temple 17 belonging to the Gupta era. There are a number of other temples and monuments strewn across the village of Sanchi, dating from the times of the dynasties that reigned over the region, beginning from 3rd century BCE to 12th century CE.
+
+
+Chiseled with a number of Brahmi inscriptions that date back to the 3rd century BCE, leading up to 800 CE, Sanchi Stupa is not surprisingly a site of immense religious and historical significance for the Buddhist faith followers. As you explore in awe and excitement the monument scattered landscape of Sanchi, and walk up to the Great Stupa, be sure to peer closely at the four gateways that surround it and open out to it. Built in the first century BC by Andhra-Satavahanas, these four gateways represent love, courage, trust and peace and are carved intricately with events and scenes from Buddha’s life. </string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_restaurants">Restaurants</string>
+    <string name="title_activity_temples">Worship Places</string>
+    <string name="title_activity_visitingplaces">Visiting Places</string>
+    <string name="title_activity_bakenshake">Bake n Shake</string>
+    <string name="title_activity_bapu">Bapu Ki Kutia</string>
+    <string name="title_activity_hakeem">Lazeez Hakeem</string>
+    <string name="title_activity_pizzeria">Da Pizzeria</string>
+    <string name="title_activity_soorma">Soorma Bhopali</string>
+    <string name="title_activity_abh">Amer Bakery Hut</string>
+    <string name="title_activity_bhopalex">Bhopal Express</string>
+    <string name="title_activity_hong">Hong Kong</string>
+    <string name="title_activity_kafe">Kafe Kulture</string>
+    <string name="title_activity_momo">Momo Cafe</string>
+    <string name="title_activity_natural">Natural</string>
+    <string name="title_activity_rice">Rice Bowl</string>
+    <string name="title_activity_sagar">Sagar Gaire</string>
+    <string name="title_activity_teatalks">Tea Talks</string>
+    <string name="title_activity_tea_talks">Tea Talks</string>
+    <string name="title_activity_wonder">Wonder Bread</string>
+    <string name="title_activity_birla">Birla Temple</string>
+
+    <string name="title_activity_bhoj">Bhojpur</string>
+    <string name="title_activity_karfu">Karfu Wali Mata</string>
+    <string name="title_activity_malai">"Malai Temple"</string>
+    <string name="title_activity_mata">Salkanpur Mata Mandir</string>
+    <string name="title_activity_gufa">Gufa Mandir</string>
+    <string name="title_activity_jain">Jain Mandir</string>
+    <string name="title_activity_kali">Kali Mandir</string>
+    <string name="title_activity_moti">Moti Masajid</string>
+    <string name="title_activity_sai">Sai Temple</string>
+    <string name="title_activity_bari">KaliBari</string>
+    <string name="title_activity_maa">Kankali Mandir</string>
+    <string name="title_activity_guru">Gurudwara</string>
+    <string name="title_activity_she">Sheetla Mata Mandir</string>
+    <string name="title_activity_gan">Chintaman Ganesh</string>
+    <string name="title_activity_neo">Neori Temple</string>
+    <string name="title_activity_taj">Taj-Ul-Masajid</string>
+    <string name="title_activity_bheem">Bheem Betika</string>
+    <string name="gohar">Situated along the banks of the Upper Lake, Gohar Mahal, even though not entirely well maintained, still manages to maintain its majestic look and the past glory. One of the beautiful palaces in Bhopal, it was built by the first woman ruler of Bhopal, Gohar Begum. This palace was constructed in the year 1820, and is truly an architectural marvel, presenting a perfect blend of Hindu and Mughal architecture.
+</string>
+
+    <string name="taj">The name Taj-ul-masjid literally means ‘The Crown of Mosques’, which is truly reflected in the majestic architecture of the mosque, a magnificent spectacle in its own right. Also used as a madrasah, its construction was started by Sultan Shah Jehan Begum of Bhopal (1868 to 1901) and it was completely built only after 1971 by the great efforts of Allama Mohammad Imran Khan Nadwi Azhari of Bhopal.The mosque features a pink facade, on top of which stands the two 18-storeyed octagonal minarets. These minarets each have a huge bulbous dome, below which lies a main hallway with beautiful pillars and marble flooring. Apart from this, the mosque also encompasses a courtyard with a large tank in the centre. The double-storey gateway in the courtyard, with 9 cusped, multifold openings and 4 recessed archways, leads to the main prayer hall. The Quibla Wall within the prayer hall is ornately adorned with 11 recessed arch carvings and fine screens of trellis work.</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_van">Van Vihar</string>
+    <string name="van">Maintained and administered by Forest Department of Madhya Pradesh, Van Vihar National Park, Madhya Pradesh  is spread across an area of 445 hectares. More of a zoo than a sanctuary, this place houses a variety of animals, orphaned or brought from other parts of the state or exchanges from other zoos. Even though Van Vihar was declared to be a national park in 1983, it has been developed and managed as a modern zoological park, featuring a natural habitat that houses both carnivores and herbivores.This one of a kind national park allows herbivores to roam freely while the carnivores are kept inside enclosed areas, bounded by trenches and walls so as to prevent poaching. The dietary needs of the animals are taken care of, for example the captives like panther, tiger, lion and more are fed on mutton while the free ranging animals like chital, black buck, sambar and blue bull are feed grass and other plant species growing within Van Vihar National Park.Apart from these, Van Vihar National Park is also home to several animals belonging to endangered species. The varied flora and wilderness of the park also makes an ideal place for avian fauna, consisting of over 200 species of birds migrating to the park during the winter season, along with a variety of butterflies and insects.</string>
+    <string name="title_activity_gohar">Gohar Mahal</string>
+    <string name="title_activity_manav">Manav Sanghralaya</string>
+    <string name="manav">Indira Gandhi Rashtriya Manav Sangrahalaya, also referred to as The National Museum of Mankind, is spread across an area of 200 acres. This place happens to be the only tribal habitat in the world, exhibiting contemporary tribal cultures and actual-size dwellings of typical tribal villages of Indian states. The one of a kind museum is situated in a prehistoric site and displays a vivid collection of pre-historic painted rock shelters, quite realistic replicas of tribal life.</string>
+    <string name="title_activity_kanha">Kanha Fun City</string>
+    <string name="kanha">Theme parks or adventure parks are the life lines of Metros and big cities of India. These parks being one of the best family weekend entertainers welcome people with varieties of rides, shopping mall, water parks and ample food courts. With special fun and rides, these theme parks form a vital part among the city dwellers. These little magical island are a major source of entertainment, a weekend break form the chores of the daily life. Planning for a fun and adventurous trip? Pack your bags and visit Kanha Fun City which is one of the best Amusement and water Park in Bhopal. You can enjoy variety of rides, water sports and some delicious foods and picture perfect views. A perfect destination for children and adults both who want to spend some amazing time doing rides and water activities. If you are looking for a fun trip, Kanha Fun City is your destination.</string>
+    <string name="title_activity_upper">Upper Lake</string>
+    <string name="upper">The oldest man made lake in India, Upper lake is also known as Bhojtal or Bada Talab locally. This beautiful and vast water body was built during the 11th century. The lake is a massive earthen bound construction, built across the Kolans River. According to a legend, it is believed that King Bhoj constructed this gigantic lake to cure his skin disease.The Upper lake is spread over a catchment area of 36.1 sq km, and it happens to be the major source of potable water for the people of Bhopal. Within the vicinity of the lake, there is an attractive royal garden called Kamla Park, which makes its surroundings more scenic. The hub of all water sport activities in Bhopal, the lake is a favourite spot for adventure enthusiasts. The Upper (and bigger) Lake is separated from the smaller one by an overbridge. A boat club, walkway and aquarium, serenaded by a cool breeze, makes the Upper Lake area delightful for a rendezvous. The lake also has the dargah of Shah Ali Shah, a maulvi.</string>
+    <string name="title_activity_sanchi">Sanchi Stoop</string>
+    <string name="sanchi">India’s oldest stone structure, commissioned into existence by Emperor Ashoka and built over the remains of Buddha in a glorious endeavor to honour them, Sanchi Stupa is a magnificent exemplar of not just Buddhist and Mauryan art and architecture, but also of faith and reverence. While its foundation was overlain by Emperor Ashoka in 3rd century BCE, it was actually his wife, Queen Devi, a native of Sanchi, who eventually oversaw its establishment. The initial structure was half the size of the present edifice, enclosed with railings made of wood and crowned with a stone umbrella-like structure, known as chatra that symbolises high rank. Gradually, over the centuries that followed and as different dynasties crossed its path, the Stupa and the region surrounding it grew and developed into the grand, illustrious heritage site that it is now. A World Heritage site, Sanchi Stupaessentially refers to Stupa 1, known more fittingly as the Great Stupa. Surrounding it is Stupa 3, the Ashokan pillar, Temple 18 from the Mauryan era and Temple 17 belonging to the Gupta era. There are a number of other temples and monuments strewn across the village of Sanchi, dating from the times of the dynasties that reigned over the region, beginning from 3rd century BCE to 12th century CE. Chiseled with a number of Brahmi inscriptions that date back to the 3rd century BCE, leading up to 800 CE, Sanchi Stupa is not surprisingly a site of immense religious and historical significance for the Buddhist faith followers. As you explore in awe and excitement the monument scattered landscape of Sanchi, and walk up to the Great Stupa, be sure to peer closely at the four gateways that surround it and open out to it. Built in the first century BC by Andhra-Satavahanas, these four gateways represent love, courage, trust and peace and are carved intricately with events and scenes from Buddha’s life. Visit between November to February.</string>
+    <string name="title_activity_birlam">Birla Museum</string>
+    <string name="birlam">Situated atop the hilly terrains of Bhopal, Birla Museum is an archaeological museum set up in 1971. This one of its kind museum in Bhopal preserves the evidences and artifacts, dating right back to prehistoric periods. Apart from this, it also provides its visitors a glimpse of the social culture of primitive men. Other items housed at the museum include tools and equipment that were used by primitive men during the Palaeolithic and Neolithic ages, coins, manuscripts and terracotta objects, all dating back to the period between 2nd century BC and 6th century AD.You will be amazed by the collection here, ranging from a model of Bhimbetka rock shelter to ancient wall paintings of the Stone Age. You can also find displays of stone sculptures, belonging to 7th to the 13th century, which were collected from the various archaeological sites.</string>
+    <string name="title_activity_science">Regional Science Center</string>
+    <string name="science">When in Bhopal, learn everything you can about science and technology! For those of you with kids (8 years and above), this is the most innovative way of spending quality time together. Each of its floors are dedicated to a scientific discipline including Engine Hall, Electro-Technic Gallery, Fun Science Gallery, Space Gallery, Science for Children Gallery and other attractions. This is an interactive museum that helps kids understand the basic principles of science. The center is divided into 3 categories namely Fun Science, Atmosphere and Energy along with a Science Park, numerous indoor activities, and shows including Taramandal, 3D and Sky Observation.</string>
+    <string name="title_activity_bharat">Bharat Bhavan</string>
+    <string name="bharat">A unique institution for performing and visual arts, Bharat Bhavan is a center of unparalleled excellence. This multi-art complex is designed in accordance with its surroundings, thus offering a visual impact of spaciousness. A place for contemporary expression, manifestation, exploration and innovation, this complex provides interactive propinquity to the visual, vocal and performing arts. A a must-visit for art enthusiast, this place is a thriving center of contemporary arts, having its accolades countrywide.
+
+Bharat Bhavan Roopankar Museum of Fine arts features three galleries, namely The Tribal Art Gallery, Rangdarshni Gallery and Modern Art Gallery. The Tribal Art Gallery displays the journey through time where the times of future, present and past mingle with each other creating an experience of timelessness. The modern art gallery has permanent exhibitions of the works of artists and sculptors while the Rangdarshni Gallery features recent series of Rupabh art exhibitions and other occasional exhibitions.</string>
+    <string name="title_activity_shaurya">Shaurya Smarak</string>
+    <string name="shaurya">Shaurya Smarak is Bhopal city’s important sightseeing spot on Arera Hills. Different shapes, angles, materials and techniques are being used to display complex enigmatic experiences of life-death, war-peace, salvation-devotion in easy and simple way. An interesting fabric has been knitted with paintings on walls, ceilings, shapes, materials and technique. Arera Hills’ natural features, hilly terrain and trees celebrating life amidst rocks have been masterfully used a symbols. On the premises, various aspects of life, war theatre, death and life after death have been displayed in a series of premises.
+
+As one enters the memorial, a square shape open courtyard with clay-colour and grassed stairs fill his heart with atmosphere of simplicity and experience of piety. From here, the visitor will reach a circular courtyard displaying the earth having been hurt by ravages of war. There will be totally dark and black small square shaped area where a ray of light will enter intermittently through a small hole. The ray formed by natural light during day and fibreoptic light will be the symbol of soul which discards body after death.
+
+About 2 to 3 meter high metal bars will be set up like well planned rows of army contingents on the premises to display concept of soul’s immortality. Beams of fibreoptic lights will kindle up on the top of these bars in the dark of the night. A laserbeam light atop 300 meter high bar will light up the memorial in the night. Sheet of water on the basis of metal bars and laserbeam will be symbol of peace and piety. Atmosphere created on the premises of Shaurya Smarak will help visitors realise the supreme sacrifice made by gallant soldiers and their hearts will be naturally filled with sense of reverence towards them.</string>
+    <string name="title_activity_sair">Sair Sapata</string>
+    <string name="sair">For the energetic teenagers and youth, there is an Adventure Zone which offers games to test your athletic fervor. Activities like Burma bridge, rope-climbing, tyre crossing, commando net etc., are an enthusiasm booster for all. We have all heard about the sky-bars but Sair Sapata offers you a bar over water. Some of the popular brands of wine can be enjoyed over the glass floor of the bar while the flowing water beneath gives you a floating feel. Another innovative feature of Sair Sapata is the Musical Fountain dancing to the tunes of music and illuminated with colourful lights. The food zone at Sair Sapata has outlets and a huge restaurant which offers South Indian, Chinese, Non-Veg, Chaat, Ice-cream, birthdays, kitties, conference and product launch with the backdrop of nature and birds, chirping all around.</string>
+    <string name="title_activity_people">People\'s Mall</string>
+    <string name="people">Peoples World Mall is a part of Peopless group and its ventures . It has basements on-floor parking lots managed by Central Parking Services. It spans over 125,000 square metres (1,350,000 sq ft) in area. It is largest entertainment mall in Central India.</string>
+    <string name="title_activity_manua">Manua Bhan Ki Tekri</string>
+    <string name="manua">Situated atop a hill is the beautiful Manua Bhan Ki Tekri, a famous pilgrimage spot for Jain devotees. Also known as Mahaveer Giri, it is known for its exquisite architecture and panoramic views of the city. The tekri houses the footwear of Jain saint Shri Jindutta Sureshwarji, Maharaj Shri Vijay Suriji and Acharya Manutung, along with an idol of Shri Man Bhadarji. The Simha Gate of the temple features an old manuscript carved on stone, interestingly the language in which it is written is still to be deciphered. It is said to be the Sadhana Sthali of Oswal Dynasty. On the event of Kartik Purnima, a big fare is held in the temple every year.</string>
+    <string name="app_label">search</string>
+    <string name="search_hint">search...</string>
+    <string name="hint_search">search</string>
+    <string name="menu_search">search2</string>
+    <string name="title_activity_contacys">contacysActivity</string>
+     <string name="google_maps_key_instructions" templateMergeStrategy="replace"><!--
+
+  TODO: Before you run your application, you need a Google Maps API key.
+
+  To get one, follow this link, follow the directions and press "Create" at the end:
+
+  https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX%3Bteamtreehouse.com.iamhere
+
+  You can also add your credentials to an existing key, using this line:
+  XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX;teamtreehouse.com.iamhere
+
+  Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+  string in this file.
+  --></string>
+
+    <string name="google_maps_key" templateMergeStrategy="preserve">YOUR_KEY_HERE</string>
+    <string name="title_activity_maps">Map</string>
+
+
+</resources>

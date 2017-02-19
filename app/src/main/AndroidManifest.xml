@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.somesh.viewbhopal">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".search"
+            android:label="@string/search_hint">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searcheable" />
+        </activity>
+        <activity
+            android:name=".Restaurants"
+            android:label="@string/title_activity_restaurants"></activity>
+        <activity
+            android:name=".Temples"
+            android:label="@string/title_activity_temples"></activity>
+        <activity
+            android:name=".Visitingplaces"
+            android:label="@string/title_activity_visitingplaces"></activity>
+        <activity
+            android:name=".bakenshake"
+            android:label="@string/title_activity_bakenshake"></activity>
+        <activity
+            android:name=".bapu"
+            android:label="@string/title_activity_bapu"></activity>
+        <activity
+            android:name=".hakeem"
+            android:label="@string/title_activity_hakeem"></activity>
+        <activity
+            android:name=".pizzeria"
+            android:label="@string/title_activity_pizzeria"></activity>
+        <activity
+            android:name=".soorma"
+            android:label="@string/title_activity_soorma"></activity>
+        <activity
+            android:name=".abh"
+            android:label="@string/title_activity_abh"></activity>
+        <activity
+            android:name=".bhopalex"
+            android:label="@string/title_activity_bhopalex"></activity>
+        <activity
+            android:name=".hong"
+            android:label="@string/title_activity_hong"></activity>
+        <activity
+            android:name=".kafe"
+            android:label="@string/title_activity_kafe"></activity>
+        <activity
+            android:name=".momo"
+            android:label="@string/title_activity_momo"></activity>
+        <activity
+            android:name=".natural"
+            android:label="@string/title_activity_natural"></activity>
+        <activity
+            android:name=".rice"
+            android:label="@string/title_activity_rice"></activity>
+        <activity
+            android:name=".sagar"
+            android:label="@string/title_activity_sagar"></activity>
+        <activity
+            android:name=".tea_talks"
+            android:label="@string/title_activity_tea_talks"></activity>
+        <activity
+            android:name=".wonder"
+            android:label="@string/title_activity_wonder"></activity>
+        <activity
+            android:name=".birla"
+            android:label="@string/title_activity_birla"></activity>
+        <activity
+            android:name=".bhoj"
+            android:label="@string/title_activity_bhoj"></activity>
+        <activity
+            android:name=".malai"
+            android:label="@string/title_activity_malai"></activity>
+        <activity
+            android:name=".mata"
+            android:label="@string/title_activity_mata"></activity>
+        <activity
+            android:name=".gufa"
+            android:label="@string/title_activity_gufa"></activity>
+        <activity
+            android:name=".jain"
+            android:label="@string/title_activity_jain"></activity>
+        <activity
+            android:name=".kali"
+            android:label="@string/title_activity_kali"></activity>
+        <activity
+            android:name=".moti"
+            android:label="@string/title_activity_moti"></activity>
+        <activity
+            android:name=".sai"
+            android:label="@string/title_activity_sai"></activity>
+        <activity
+            android:name=".bari"
+            android:label="@string/title_activity_bari"></activity>
+        <activity
+            android:name=".maa"
+            android:label="@string/title_activity_maa"></activity>
+        <activity
+            android:name=".guru"
+            android:label="@string/title_activity_guru"></activity>
+        <activity
+            android:name=".she"
+            android:label="@string/title_activity_she"></activity>
+        <activity
+            android:name=".gan"
+            android:label="@string/title_activity_gan"></activity>
+        <activity
+            android:name=".neo"
+            android:label="@string/title_activity_neo"></activity>
+        <activity
+            android:name=".bheem"
+            android:label="@string/title_activity_bheem"></activity>
+        <activity
+            android:name=".taj"
+            android:label="@string/title_activity_taj"></activity>
+        <activity
+            android:name=".van"
+            android:label="@string/title_activity_van"></activity>
+        <activity
+            android:name=".gohar"
+            android:label="@string/title_activity_gohar"></activity>
+        <activity
+            android:name=".manav"
+            android:label="@string/title_activity_manav"></activity>
+        <activity
+            android:name=".kanha"
+            android:label="@string/title_activity_kanha"></activity>
+        <activity
+            android:name=".upper"
+            android:label="@string/title_activity_upper"></activity>
+        <activity
+            android:name=".sanchi"
+            android:label="@string/title_activity_sanchi"></activity>
+        <activity
+            android:name=".birlam"
+            android:label="@string/title_activity_birlam"></activity>
+        <activity
+            android:name=".science"
+            android:label="@string/title_activity_science"></activity>
+        <activity
+            android:name=".bharat"
+            android:label="@string/title_activity_bharat"></activity>
+        <activity
+            android:name=".shaurya"
+            android:label="@string/title_activity_shaurya"></activity>
+        <activity
+            android:name=".sair"
+            android:label="@string/title_activity_sair"></activity>
+        <activity
+            android:name=".people"
+            android:label="@string/title_activity_people"></activity>
+        <activity
+            android:name=".manua"
+            android:label="@string/title_activity_manua"></activity>
+        <activity
+            android:name=".contacysActivity"
+            android:label="@string/title_activity_contacys"></activity>
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps"></activity>
+    </application>
+
+</manifest>

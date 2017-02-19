@@ -1,0 +1,179 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#BDBDBD"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".abh">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/abh"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:scaleType="centerCrop"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Address &amp; contact:-"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:id="@+id/head1"
+                android:paddingTop="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:layout_below="@id/head1"
+                android:text="Opposite Devika Petrol Pump,\n10, Bittan Market, Arera Colony,\n Bhopal.\nPhone No.: 0755-4299953, 0755-3918119"
+                android:id="@+id/drop1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Cuisines:-"
+                android:textColor="#000000"
+                android:paddingTop="20dp"
+                android:textStyle="bold"
+                android:id="@+id/head2"
+                android:layout_below="@id/drop1"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/head2"
+                android:text="&#8226;Bakery\n&#8226;Desserts\n&#8226;Fast Food"
+                android:id="@+id/drop2"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Opening Hours:-"
+                android:textColor="#000000"
+                android:paddingTop="20dp"
+                android:textStyle="bold"
+                android:id="@+id/head3"
+                android:layout_below="@id/drop1"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/head3"
+                android:text="Mon-Sun (09:00AM to 10:30PM)"
+                android:id="@+id/drop3"
+                android:textSize="24sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Highlights:-"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:id="@+id/head4"
+                android:layout_below="@id/drop3"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/head4"
+                android:text="&#8226;Home Delivery\n&#8226;Takeaway Available\n&#8226;Seating Available\n&#8226;Bar Not Available\n&#8226;Desserts and Bakes\n&#8226;Air Conditioned"
+                android:id="@+id/drop4"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Cost:-"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:id="@+id/head5"
+                android:layout_below="@id/drop4"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/head5"
+                android:text="₹300 for two people (approx.)\nCash and Cards accepted."
+                android:id="@+id/drop5"
+                android:textSize="24sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Menu"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:id="@+id/head6"
+                android:layout_below="@id/head5"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/menu5"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="#BDBDBD"
+                android:layout_below="@id/head6"
+                />
+            <Gallery
+                android:id="@+id/gallery1"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/image1"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Map"
+                android:id="@+id/mapButton"
+                android:layout_below="@+id/gallery1"
+                android:layout_centerHorizontal="true" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

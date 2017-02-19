@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="#BDBDBD"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.somesh.viewbhopal.moti">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/moti"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:scaleType="centerCrop"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Address:-"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:id="@+id/head1"
+                android:paddingTop="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:layout_below="@id/head1"
+                android:text="Imami Gate Road, Peer Gate, Bhopal."
+                android:id="@+id/drop1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Opening Hours:-"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:paddingTop="20dp"
+                android:textStyle="bold"
+                android:id="@+id/head2"
+                android:layout_below="@id/drop1"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:layout_below="@id/head2"
+                android:text="All days of the week.\n06:30AM to 07:00PM"
+                android:id="@+id/drop2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="About:-"
+                android:textColor="#000000"
+                android:paddingTop="20dp"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:id="@+id/head3"
+                android:layout_below="@id/drop1"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:layout_below="@id/head3"
+                android:text="Begum Sikander Jahan the second queen of Bhopal and the daughter of Queen Qudisiya built this historical and alluring religious structure in 1860. Popularly known as 'Pearl Mosque' it justifies the name given to it. Primarily constructed using beautiful white marbles it is certainly a must visit place in Bhopal. The floral motifs carved at the ceiling, walls and pillars adds to the beauty of this very famous mosque in central India. Through the size of the mosque is not so huge but the structure and appearance is appealing. Moti Masjid is one of the most visited Islamic religious structure in Bhopal and is visited by thousand of Muslim devotees for offering daily namaz. The heart touching architecture of Pearl Mosque has given it a special place in history of Bhopal and India."
+                android:id="@+id/drop3" />
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

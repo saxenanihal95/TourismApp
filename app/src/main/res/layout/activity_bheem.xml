@@ -1,0 +1,192 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#BDBDBD"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".wonder">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/bheem"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:scaleType="centerCrop"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Address &amp; contact:-"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:id="@+id/head1"
+                android:paddingTop="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:layout_below="@id/head1"
+                android:text="Bhimbetka caves and rock shelters,\nBhimbetka, Bhopal, Madhya Pradesh 462038,\nIndia.\nPhone No.: +917552746827"
+                android:id="@+id/drop1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Good For:-"
+                android:textColor="#000000"
+                android:paddingTop="20dp"
+                android:textStyle="bold"
+                android:id="@+id/head2"
+                android:layout_below="@id/drop1"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:layout_below="@id/head2"
+                android:text="&#8226;History Buffs\n&#8226;Experience Seekers\n&#8226;Photo Fanatics
+"
+                android:id="@+id/drop2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Opening Hours:-"
+                android:textColor="#000000"
+                android:paddingTop="20dp"
+                android:textStyle="bold"
+                android:id="@+id/head3"
+                android:layout_below="@id/drop1"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:layout_below="@id/head3"
+                android:text="All days of the week (7:00AM - 06:00PM)"
+                android:id="@+id/drop3" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Entry Fee:-"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:id="@+id/head4"
+                android:layout_below="@id/drop3"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:layout_below="@id/head4"
+                android:text="&#8226;10 per person for Indians\n&#8226;100 per person for foreign tourists\n&#8226;50 per LMV for Indians\n&#8226;20 per LMV for foreign tourists\n&#8226;100 per mini bus for Indians\n&#8226;400 per mini bus for foreign tourists"
+                android:id="@+id/drop4" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Websites:-"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:id="@+id/head5"
+                android:layout_below="@id/drop4"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:layout_below="@id/head5"
+                android:text="http://www.madhya-pradesh-tourism.com/tourist-attractions/bhimbetka-rock-shelters.html"
+                android:id="@+id/drop5" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="Visit Duration:-"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:id="@+id/head6"
+                android:layout_below="@id/drop5"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"/>
+            android:textAppearance="?android:attr/textAppearanceLarge"
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:layout_below="@id/head6"
+                android:text="1 to 2 Hours."
+                android:id="@+id/drop6" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="About:-"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:id="@+id/head7"
+                android:layout_below="@id/drop6"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:layout_below="@id/head7"
+                android:text="@string/bheem"
+                android:id="@+id/drop7" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Map"
+                android:id="@+id/mapButton"
+                android:layout_below="@+id/drop7"
+                android:layout_centerHorizontal="true" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
