@@ -15,8 +15,6 @@ import android.widget.ImageView;
 public class abh extends AppCompatActivity {
 
 
-
-
         Integer[] imageIDs = {
                 R.drawable.abh1,
                 R.drawable.abh2,

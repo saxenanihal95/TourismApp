@@ -16,12 +16,7 @@ import android.widget.ImageView;
 public class bapu extends ActionBarActivity {
 
 
-
-
-
-
-
-        Integer[] imageIDs = {
+    Integer[] imageIDs = {
                 R.drawable.bkk1,
                 R.drawable.bkk2,
                 R.drawable.bkk3
