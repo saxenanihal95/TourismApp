@@ -26,18 +26,6 @@ public class abh extends AppCompatActivity {
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_abh);
-// Note that Gallery view is deprecated in Android 4.1---
-            Gallery gallery = (Gallery) findViewById(R.id.gallery1);
-            gallery.setAdapter(new ImageAdapter(this));
-            gallery.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-
-                public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
-
-// display the images selected
-                    ImageView imageView = (ImageView) findViewById(R.id.image1);
-                    imageView.setImageResource(imageIDs[position]);
-                }
-            });
         }
 
         public class ImageAdapter extends BaseAdapter {
