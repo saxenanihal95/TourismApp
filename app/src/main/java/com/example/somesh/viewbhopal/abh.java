@@ -28,41 +28,5 @@ public class abh extends AppCompatActivity {
             setContentView(R.layout.activity_abh);
         }
 
-        public class ImageAdapter extends BaseAdapter {
-            private Context context;
-            private int itemBackground;
 
-            public ImageAdapter(Context c) {
-                context = c;
-// sets a grey background; wraps around the images
-                TypedArray a = obtainStyledAttributes(R.styleable.MyGallery);
-                itemBackground = a.getResourceId(R.styleable.MyGallery_android_galleryItemBackground, 0);
-                a.recycle();
-            }
-
-            // returns the number of images
-            public int getCount() {
-                return imageIDs.length;
-            }
-
-            // returns the ID of an item
-            public Object getItem(int position) {
-                return position;
-            }
-
-            // returns the ID of an item
-            public long getItemId(int position) {
-                return position;
-            }
-
-            // returns an ImageView view
-            public View getView(int position, View convertView, ViewGroup parent) {
-                ImageView imageView = new ImageView(context);
-                imageView.setImageResource(imageIDs[position]);
-                imageView.setLayoutParams(new Gallery.LayoutParams(100, 100));
-                imageView.setBackgroundResource(itemBackground);
-                return imageView;
-            }
-        }
-
-    }
+}

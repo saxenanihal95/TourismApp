@@ -146,24 +146,47 @@
                 android:layout_alignParentStart="true"
                 android:textSize="30sp" />
 
-            <ImageView
-                android:id="@+id/image1"
+            <HorizontalScrollView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/menu5"
-                android:layout_gravity="center_horizontal"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:background="#BDBDBD"
-                android:layout_below="@id/head6"
-                />
-            <Gallery
-                android:id="@+id/gallery1"
-                android:layout_width="fill_parent"
-                android:layout_height="60dp"
-                android:layout_below="@id/image1"/>
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/be1"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/be2"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/be3"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/be4"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/be5"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/be6"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/be7"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/be8"/>
+                </LinearLayout>
+            </HorizontalScrollView>
 
             <Button
                 android:layout_width="wrap_content"
