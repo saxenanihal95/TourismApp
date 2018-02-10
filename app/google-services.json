@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "808342687335",
+    "firebase_url": "https://viewbhopal-d4695.firebaseio.com",
+    "project_id": "viewbhopal-d4695",
+    "storage_bucket": "viewbhopal-d4695.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:808342687335:android:17777e3caa572182",
+        "android_client_info": {
+          "package_name": "com.notnull.nsaxena.viewbhopal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "808342687335-7738p63f6uhhk4nqgp5ncduktrvjudqt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.notnull.nsaxena.viewbhopal",
+            "certificate_hash": "b5b7e57dbdaae6bcf80f11c1eda643d33968dff2"
+          }
+        },
+        {
+          "client_id": "808342687335-6ibl0t1jocdh07tj75mgnbcp056lgo2v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChWlPcE3Km3mpGlu8HVuYrBf4qW8e33Ho"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "808342687335-6ibl0t1jocdh07tj75mgnbcp056lgo2v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

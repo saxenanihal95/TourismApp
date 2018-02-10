@@ -6,31 +6,105 @@ import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
+
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
+
 
 
 public class Visitingplaces extends AppCompatActivity {
 
     RecyclerView myRecyclerView;
     RecyclerView.Adapter myAdapter;
-    List mVistingPlaceList = new ArrayList<>(Arrays.asList("Person 1", "Person 2", "Person 3", "Person 4", "Person 5", "Person 6", "Person 7"));
-
+    //List mVistingPlaceList = new ArrayList<>(Arrays.asList("Person 1", "Person 2", "Person 3", "Person 4", "Person 5", "Person 6", "Person 7"));
+    List mVistingPlaceList = new ArrayList<Visitingplaces>();
+    private DatabaseReference mDatabase;
+    private static final String TAG = "Visitingplaces";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.visiting_places);
+        mDatabase = FirebaseDatabase.getInstance().getReference();
+        for(int i=0;i<2;i++)
+        {
+            Query myTopPostsQuery = mDatabase.child("visiting places").child(String.valueOf(i));
+
+            // My top posts by number of stars
+            myTopPostsQuery.addValueEventListener(new ValueEventListener() {
+                String about;
+                String address;
+                String entryFee;
+                String goodFor;
+                String openingHours;
+                String title;
+                String visitDuration;
+                String websites;
+                String imageUrl;
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    for (DataSnapshot postSnapshot: dataSnapshot.getChildren()) {
+
+                        switch (postSnapshot.getKey()) {
+                            case "About":
+                                about = postSnapshot.getValue().toString();
+                                break;
+                            case "Address":
+                                address = postSnapshot.getValue().toString();
+                                break;
+                            case "Entry Fee":
+                                entryFee = postSnapshot.getValue().toString();
+                                break;
+                            case "Good For":
+                                goodFor = postSnapshot.getValue().toString();
+                                break;
+                            case "Opening Hours":
+                                openingHours = postSnapshot.getValue().toString();
+                                break;
+                            case "Title":
+                                title = postSnapshot.getValue().toString();
+                                break;
+                            case "Visit Duration":
+                                visitDuration = postSnapshot.getValue().toString();
+                                break;
+                            case "Websites":
+                                websites = postSnapshot.getValue().toString();
+                                break;
+                            case "ImageUrl":
+                                imageUrl = postSnapshot.getValue().toString();
+                                break;
+                        }
+                    }
+                    mVistingPlaceList.add(new VisitingPlace( title,  about,  address,  goodFor,  imageUrl,  openingHours,  visitDuration, websites));
+                }
+
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+                    // Getting Post failed, log a message
+                    Log.w(TAG, "loadPost:onCancelled", databaseError.toException());
+                    // ...
+                }
+            });
+        }
+
+
         myRecyclerView =(RecyclerView)findViewById(R.id.recycler_view);
+        Log.d(TAG, "onCreate: "+mVistingPlaceList);
         myAdapter = new VisitingPlacesAdapter(Visitingplaces.this,mVistingPlaceList);
-        //LinearLayoutManager llm = new LinearLayoutManager(getApplicationContext());
-        // set a GridLayoutManager with default vertical orientation and 3 number of columns
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getApplicationContext(),2);
         myRecyclerView.setLayoutManager(gridLayoutManager);
         myRecyclerView.setAdapter(myAdapter);
@@ -137,38 +211,4 @@ public class Visitingplaces extends AppCompatActivity {
 
 */
 }
-class VisitingPlacesAdapter extends RecyclerView.Adapter<VisitingPlacesAdapter.MyViewHolder> {
 
-    List visitingPlacesList;
-    Context context;
-
-    public VisitingPlacesAdapter(Context context,List visitingPlacesList) {
-        this.context=context;
-        this.visitingPlacesList = visitingPlacesList;
-    }
-    @Override
-    public int getItemCount() {
-        return visitingPlacesList.size();
-    }
-
-    @Override
-    public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.visiting_places_list_item,parent, false);
-        return new MyViewHolder(v);
-    }
-
-    @Override
-    public void onBindViewHolder(MyViewHolder holder, final int position) {
-        // set the data in items
-        holder.placeTitle.setText((CharSequence) visitingPlacesList.get(position));
-    }
-    public class MyViewHolder extends RecyclerView.ViewHolder {
-        public TextView placeTitle;
-
-        public MyViewHolder(View view) {
-            super(view);
-            placeTitle=(TextView)view.findViewById(R.id.visiting_place_title);
-        }
-    }
-}

@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:id="@+id/relativeLayout">
+    android:id="@+id/relativeLayout"
+    android:background="@color/cardview_dark_background">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_view"
