@@ -1,18 +1,10 @@
-package com.example.somesh.viewbhopal;
+package com.notnull.nihal.viewbhopal;
 
-import android.content.Context;
-import android.content.res.TypedArray;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.BaseAdapter;
-import android.widget.Gallery;
-import android.widget.ImageView;
+import android.support.v7.app.AppCompatActivity;
 
 
-public class sagar extends ActionBarActivity {
+public class sagar extends AppCompatActivity {
 
 
 

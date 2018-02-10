@@ -1,21 +1,42 @@
-package com.example.somesh.viewbhopal;
+package com.notnull.nihal.viewbhopal;
 
-import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
+import android.content.Context;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 
-public class Visitingplaces extends ActionBarActivity {
+public class Visitingplaces extends AppCompatActivity {
+
+    RecyclerView myRecyclerView;
+    RecyclerView.Adapter myAdapter;
+    List mVistingPlaceList = new ArrayList<>(Arrays.asList("Person 1", "Person 2", "Person 3", "Person 4", "Person 5", "Person 6", "Person 7"));
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_vp);
-    }
+        setContentView(R.layout.visiting_places);
+        myRecyclerView =(RecyclerView)findViewById(R.id.recycler_view);
+        myAdapter = new VisitingPlacesAdapter(Visitingplaces.this,mVistingPlaceList);
+        //LinearLayoutManager llm = new LinearLayoutManager(getApplicationContext());
+        // set a GridLayoutManager with default vertical orientation and 3 number of columns
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(getApplicationContext(),2);
+        myRecyclerView.setLayoutManager(gridLayoutManager);
+        myRecyclerView.setAdapter(myAdapter);
 
+    }
+/*
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -114,5 +135,40 @@ public class Visitingplaces extends ActionBarActivity {
         startActivity(intent);
     }
 
+*/
+}
+class VisitingPlacesAdapter extends RecyclerView.Adapter<VisitingPlacesAdapter.MyViewHolder> {
 
+    List visitingPlacesList;
+    Context context;
+
+    public VisitingPlacesAdapter(Context context,List visitingPlacesList) {
+        this.context=context;
+        this.visitingPlacesList = visitingPlacesList;
+    }
+    @Override
+    public int getItemCount() {
+        return visitingPlacesList.size();
+    }
+
+    @Override
+    public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View v = LayoutInflater.from(parent.getContext())
+                .inflate(R.layout.visiting_places_list_item,parent, false);
+        return new MyViewHolder(v);
+    }
+
+    @Override
+    public void onBindViewHolder(MyViewHolder holder, final int position) {
+        // set the data in items
+        holder.placeTitle.setText((CharSequence) visitingPlacesList.get(position));
+    }
+    public class MyViewHolder extends RecyclerView.ViewHolder {
+        public TextView placeTitle;
+
+        public MyViewHolder(View view) {
+            super(view);
+            placeTitle=(TextView)view.findViewById(R.id.visiting_place_title);
+        }
+    }
 }

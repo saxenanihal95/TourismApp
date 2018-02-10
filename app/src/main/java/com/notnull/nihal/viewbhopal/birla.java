@@ -1,14 +1,14 @@
-package com.example.somesh.viewbhopal;
+package com.notnull.nihal.viewbhopal;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
 
-public class birla extends ActionBarActivity {
+public class birla extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

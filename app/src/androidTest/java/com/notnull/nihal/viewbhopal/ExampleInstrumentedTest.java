@@ -1,4 +1,4 @@
-package com.example.somesh.viewbhopal;
+package com.notnull.nihal.viewbhopal;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

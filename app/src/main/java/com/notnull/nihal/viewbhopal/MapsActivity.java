@@ -1,4 +1,4 @@
-package com.example.somesh.viewbhopal;
+package com.notnull.nihal.viewbhopal;
 
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
@@ -13,7 +13,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
-public double LAT;
+    public double LAT;
     public double LNG;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -1,21 +1,13 @@
-package com.example.somesh.viewbhopal;
+package com.notnull.nihal.viewbhopal;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.res.TypedArray;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.BaseAdapter;
 import android.widget.Button;
-import android.widget.Gallery;
-import android.widget.ImageView;
 
 
-public class bakenshake extends ActionBarActivity {
+public class bakenshake extends AppCompatActivity {
 
 
 

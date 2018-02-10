@@ -5,7 +5,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:background="#BDBDBD"
-    tools:context="com.example.somesh.viewbhopal.people">
+    tools:context="com.notnull.nihal.viewbhopal.people">
 
     <ScrollView
         android:layout_width="match_parent"

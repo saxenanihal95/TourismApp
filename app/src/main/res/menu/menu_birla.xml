@@ -1,7 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.yashraj.viewbhopal.birla">
+    tools:context="com.notnull.yashraj.viewbhopal.birla">
     <item android:id="@+id/action_settings"
         android:title="Location"
         android:orderInCategory="100"
