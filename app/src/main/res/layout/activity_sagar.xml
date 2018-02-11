@@ -5,7 +5,7 @@
     android:background="#BDBDBD"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.notnull.nihal.viewbhopal.sagar">
+    tools:context="com.notnull.nsaxena.viewbhopal.sagar">
 
     <ScrollView
         android:layout_width="match_parent"

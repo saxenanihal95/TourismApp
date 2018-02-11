@@ -95,7 +95,7 @@ About 2 to 3 meter high metal bars will be set up like well planned rows of army
     <string name="hint_search">search</string>
     <string name="menu_search">search2</string>
     <string name="title_activity_contacys">contacysActivity</string>
-     <string name="google_maps_key_instructions" templateMergeStrategy="replace"><!--
+    <string name="google_maps_key_instructions" templateMergeStrategy="replace"><!--
 
   TODO: Before you run your application, you need a Google Maps API key.
 
@@ -112,6 +112,7 @@ About 2 to 3 meter high metal bars will be set up like well planned rows of army
 
     <string name="google_maps_key" templateMergeStrategy="preserve">YOUR_KEY_HERE</string>
     <string name="title_activity_maps">Map</string>
+    <string name="title_activity_visiting_place_detail">VisitingPlaceDetail</string>
 
 
 </resources>
