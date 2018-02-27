@@ -135,41 +135,11 @@
             android:name=".neo"
             android:label="@string/title_activity_neo" />
         <activity
-            android:name=".bheem"
-            android:label="@string/title_activity_bheem" />
-        <activity
-            android:name=".taj"
-            android:label="@string/title_activity_taj" />
-        <activity
-            android:name=".van"
-            android:label="@string/title_activity_van" />
-        <activity
-            android:name=".gohar"
-            android:label="@string/title_activity_gohar" />
-        <activity
-            android:name=".manav"
-            android:label="@string/title_activity_manav" />
-        <activity
-            android:name=".kanha"
-            android:label="@string/title_activity_kanha" />
-        <activity
-            android:name=".upper"
-            android:label="@string/title_activity_upper" />
-        <activity
-            android:name=".sanchi"
-            android:label="@string/title_activity_sanchi" />
-        <activity
-            android:name=".birlam"
-            android:label="@string/title_activity_birlam" />
-        <activity
             android:name=".science"
             android:label="@string/title_activity_science" />
         <activity
             android:name=".bharat"
             android:label="@string/title_activity_bharat" />
-        <activity
-            android:name=".shaurya"
-            android:label="@string/title_activity_shaurya" />
         <activity
             android:name=".sair"
             android:label="@string/title_activity_sair" />

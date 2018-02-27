@@ -6,4 +6,177 @@
     android:layout_height="match_parent"
     tools:context="com.notnull.nsaxena.viewbhopal.VisitingPlaceDetail">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/placeholder" />
+
+            <TextView
+                android:id="@+id/head1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingTop="20dp"
+                android:text="Address &amp; contact:-"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/drop1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/head1"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/head2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/drop1"
+                android:layout_centerVertical="true"
+                android:paddingTop="20dp"
+                android:text="Good For:-"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/drop2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/head2"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/head3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/drop1"
+                android:layout_centerVertical="true"
+                android:paddingTop="20dp"
+                android:text="Opening Hours:-"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/drop3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/head3"
+                android:textSize="24sp" />
+
+
+            <TextView
+                android:id="@+id/head4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/drop3"
+                android:layout_centerVertical="true"
+                android:paddingTop="20dp"
+                android:text="Entry Fee:-"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/drop4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/head4"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/head5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/drop4"
+                android:layout_centerVertical="true"
+                android:paddingTop="20dp"
+                android:text="Websites:-"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/drop5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/head5"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/head6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/drop5"
+                android:layout_centerVertical="true"
+                android:paddingTop="20dp"
+                android:text="Visit Duration:-"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+            android:textAppearance="?android:attr/textAppearanceLarge"
+
+            <TextView
+                android:id="@+id/drop6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/head6"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/head7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/drop6"
+                android:layout_centerVertical="true"
+                android:paddingTop="20dp"
+                android:text="About:-"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/drop7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/head7"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/mapButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/drop7"
+                android:layout_centerHorizontal="true"
+                android:text="Map" />
+        </LinearLayout>
+    </ScrollView>
 </android.support.constraint.ConstraintLayout>

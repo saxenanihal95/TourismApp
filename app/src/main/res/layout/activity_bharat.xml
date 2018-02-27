@@ -19,7 +19,6 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:src="@drawable/bharat"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageView"
                 android:scaleType="centerCrop"
@@ -174,7 +173,6 @@
                 android:layout_height="wrap_content"
                 android:textSize="24sp"
                 android:layout_below="@id/head7"
-                android:text="@string/shaurya"
                 android:id="@+id/drop7" />
 
             <Button

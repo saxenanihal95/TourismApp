@@ -19,6 +19,8 @@ public class VisitingPlace implements Serializable{
     String visitDuration;
     String websites;
     String entryFee;
+    String latitude;
+    String longitude;
 
    public VisitingPlace()
    {
@@ -95,6 +97,22 @@ public class VisitingPlace implements Serializable{
 
     public void setEntryFee(String entryFee) {
         this.entryFee = entryFee;
+    }
+
+    public String getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(String latitude) {
+        this.latitude = latitude;
+    }
+
+    public String getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(String longitude) {
+        this.longitude = longitude;
     }
 
     @Override
