@@ -1,15 +1,6 @@
 <resources>
     <string name="app_name">ViewBhopal</string>
-    <string name="stoop">India’s oldest stone structure, commissioned into existence by Emperor Ashoka and built over the remains of Buddha in a glorious endeavor to honour them, Sanchi Stupa is a magnificent exemplar of not just Buddhist and Mauryan art and architecture, but also of faith and reverence. While its foundation was overlain by Emperor Ashoka in 3rd century BCE, it was actually his wife, Queen Devi, a native of Sanchi, who eventually oversaw its establishment.
 
-
-The initial structure was half the size of the present edifice, enclosed with railings made of wood and crowned with a stone umbrella-like structure, known as chatra that symbolises high rank. Gradually, over the centuries that followed and as different dynasties crossed its path, the Stupa and the region surrounding it grew and developed into the grand, illustrious heritage site that it is now.
-
-
-A World Heritage site, Sanchi Stupaessentially refers to Stupa 1, known more fittingly as the Great Stupa. Surrounding it is Stupa 3, the Ashokan pillar, Temple 18 from the Mauryan era and Temple 17 belonging to the Gupta era. There are a number of other temples and monuments strewn across the village of Sanchi, dating from the times of the dynasties that reigned over the region, beginning from 3rd century BCE to 12th century CE.
-
-
-Chiseled with a number of Brahmi inscriptions that date back to the 3rd century BCE, leading up to 800 CE, Sanchi Stupa is not surprisingly a site of immense religious and historical significance for the Buddhist faith followers. As you explore in awe and excitement the monument scattered landscape of Sanchi, and walk up to the Great Stupa, be sure to peer closely at the four gateways that surround it and open out to it. Built in the first century BC by Andhra-Satavahanas, these four gateways represent love, courage, trust and peace and are carved intricately with events and scenes from Buddha’s life. </string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_restaurants">Restaurants</string>
     <string name="title_activity_temples">Worship Places</string>
@@ -60,14 +51,10 @@ Chiseled with a number of Brahmi inscriptions that date back to the 3rd century 
     <string name="title_activity_birlam">Birla Museum</string>
     <string name="title_activity_science">Regional Science Center</string>
     <string name="title_activity_bharat">Bharat Bhavan</string>
-    <string name="bharat">A unique institution for performing and visual arts, Bharat Bhavan is a center of unparalleled excellence. This multi-art complex is designed in accordance with its surroundings, thus offering a visual impact of spaciousness. A place for contemporary expression, manifestation, exploration and innovation, this complex provides interactive propinquity to the visual, vocal and performing arts. A a must-visit for art enthusiast, this place is a thriving center of contemporary arts, having its accolades countrywide.
-
-Bharat Bhavan Roopankar Museum of Fine arts features three galleries, namely The Tribal Art Gallery, Rangdarshni Gallery and Modern Art Gallery. The Tribal Art Gallery displays the journey through time where the times of future, present and past mingle with each other creating an experience of timelessness. The modern art gallery has permanent exhibitions of the works of artists and sculptors while the Rangdarshni Gallery features recent series of Rupabh art exhibitions and other occasional exhibitions.</string>
     <string name="title_activity_shaurya">Shaurya Smarak</string>
     <string name="title_activity_sair">Sair Sapata</string>
     <string name="title_activity_people">People\'s Mall</string>
     <string name="title_activity_manua">Manua Bhan Ki Tekri</string>
-    <string name="manua"></string>
     <string name="app_label">search</string>
     <string name="search_hint">search...</string>
     <string name="hint_search">search</string>
@@ -88,9 +75,10 @@ Bharat Bhavan Roopankar Museum of Fine arts features three galleries, namely The
   string in this file.
   --></string>
 
-    <string name="google_maps_key" templateMergeStrategy="preserve">YOUR_KEY_HERE</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve">AIzaSyC9enByVf1vTDoehLZEJTObbRIOtYyHOL0</string>
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_visiting_place_detail">VisitingPlaceDetail</string>
+    <string name="title_activity_maps2">Map</string>
 
 
 </resources>

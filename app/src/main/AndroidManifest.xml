@@ -25,17 +25,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".search"
-            android:label="@string/search_hint">
-            <intent-filter>
-                <action android:name="android.intent.action.SEARCH" />
-            </intent-filter>
-
-            <meta-data
-                android:name="android.app.searchable"
-                android:resource="@xml/searcheable" />
-        </activity>
-        <activity
             android:name=".Restaurants"
             android:label="@string/title_activity_restaurants" />
         <activity
@@ -44,72 +33,6 @@
         <activity
             android:name=".VisitingPlaces"
             android:label="@string/title_activity_visitingplaces" />
-        <activity
-            android:name=".bakenshake"
-            android:label="@string/title_activity_bakenshake" />
-        <activity
-            android:name=".bapu"
-            android:label="@string/title_activity_bapu" />
-        <activity
-            android:name=".hakeem"
-            android:label="@string/title_activity_hakeem" />
-        <activity
-            android:name=".pizzeria"
-            android:label="@string/title_activity_pizzeria" />
-        <activity
-            android:name=".soorma"
-            android:label="@string/title_activity_soorma" />
-        <activity
-            android:name=".abh"
-            android:label="@string/title_activity_abh" />
-        <activity
-            android:name=".bhopalex"
-            android:label="@string/title_activity_bhopalex" />
-        <activity
-            android:name=".hong"
-            android:label="@string/title_activity_hong" />
-        <activity
-            android:name=".kafe"
-            android:label="@string/title_activity_kafe" />
-        <activity
-            android:name=".momo"
-            android:label="@string/title_activity_momo" />
-        <activity
-            android:name=".natural"
-            android:label="@string/title_activity_natural" />
-        <activity
-            android:name=".rice"
-            android:label="@string/title_activity_rice" />
-        <activity
-            android:name=".sagar"
-            android:label="@string/title_activity_sagar" />
-        <activity
-            android:name=".tea_talks"
-            android:label="@string/title_activity_tea_talks" />
-        <activity
-            android:name=".wonder"
-            android:label="@string/title_activity_wonder" />
-        <activity
-            android:name=".bhoj"
-            android:label="@string/title_activity_bhoj" />
-        <activity
-            android:name=".science"
-            android:label="@string/title_activity_science" />
-        <activity
-            android:name=".bharat"
-            android:label="@string/title_activity_bharat" />
-        <activity
-            android:name=".sair"
-            android:label="@string/title_activity_sair" />
-        <activity
-            android:name=".people"
-            android:label="@string/title_activity_people" />
-        <activity
-            android:name=".manua"
-            android:label="@string/title_activity_manua" />
-        <activity
-            android:name=".contacysActivity"
-            android:label="@string/title_activity_contacys" />
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -130,7 +53,8 @@
             android:name=".VisitingPlaceDetails"
             android:label="@string/title_activity_visiting_place_detail"
             android:theme="@style/AppTheme" />
-        <activity android:name=".TempleDetails"></activity>
+        <activity android:name=".TempleDetails" />
+        <activity android:name=".RestaurantDetails" />
     </application>
 
 </manifest>

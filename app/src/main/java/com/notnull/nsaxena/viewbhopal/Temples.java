@@ -81,7 +81,6 @@ public class Temples extends AppCompatActivity implements TemplesListener.OnRecl
     @Override
     public void onItemClick(View view, int postition) {
         Log.d(TAG, "onItemClick: starts");
-        Toast.makeText(this,"Normal tap at position "+postition,Toast.LENGTH_LONG).show();
         Intent intent = new Intent(this,TempleDetails.class);
         intent.putExtra("TEMPLE_TRANSFER", myAdapter.getTemple(postition));
         startActivity(intent);

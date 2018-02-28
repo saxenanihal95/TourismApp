@@ -3,120 +3,97 @@ package com.notnull.nsaxena.viewbhopal;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 
+import com.google.firebase.database.ChildEventListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
-public class Restaurants extends AppCompatActivity {
+import java.util.ArrayList;
+import java.util.List;
 
 
+public class Restaurants extends AppCompatActivity implements RestaurantsListener.OnReclyclerClickListener{
 
-    public void buttonFunction1(View v)
+    RecyclerView myRecyclerView;
+    RestaurantsAdapter myAdapter;
+    List mRestaurants = new ArrayList<Restaurant>();
+    private DatabaseReference mDatabase;
+    private static final String TAG = "Restaurants";
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        mDatabase = FirebaseDatabase.getInstance().getReference();
+        mDatabase.child("restaurants").addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                loadData(dataSnapshot);
+            }
+
+            @Override
+            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+                loadData(dataSnapshot);
+            }
+
+            @Override
+            public void onChildRemoved(DataSnapshot dataSnapshot) {
+
+            }
+
+            @Override
+            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.restaurants);
+        myRecyclerView =(RecyclerView)findViewById(R.id.recycler_view);
+        myRecyclerView.addOnItemTouchListener(new RestaurantsListener(this,myRecyclerView,this));
+        Log.d(TAG, "onCreate: "+ mRestaurants);
+
+    }
+
+    public void loadData(DataSnapshot dataSnapshot)
     {
-        Intent intent= new Intent(getApplicationContext(), bakenshake.class);
+
+        Restaurant restaurant=dataSnapshot.getValue(Restaurant.class);
+        mRestaurants.add(restaurant);
+
+        myAdapter = new RestaurantsAdapter(Restaurants.this, mRestaurants);
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(getApplicationContext(),2);
+        myRecyclerView.setLayoutManager(gridLayoutManager);
+        myRecyclerView.setAdapter(myAdapter);
+    }
+
+    @Override
+    public void onItemClick(View view, int postition) {
+        Log.d(TAG, "onItemClick: starts");
+        Intent intent = new Intent(this,RestaurantDetails.class);
+        intent.putExtra("RESTAURANT_TRANSFER", myAdapter.getRestaurant(postition));
         startActivity(intent);
     }
 
-    public void buttonFunction2(View v)
-    {
-        Intent intent= new Intent(getApplicationContext(), bapu.class);
-        startActivity(intent);
+    @Override
+    public void onItemLongClick(View view, int postition) {
+
     }
 
-    public void buttonFunction3(View v)
-    {
-        Intent intent= new Intent(getApplicationContext(), hakeem.class);
-        startActivity(intent);
-    }
-
-    public void buttonFunction4(View v)
-    {
-        Intent intent= new Intent(getApplicationContext(), pizzeria.class);
-        startActivity(intent);
-    }
-
-    public void buttonFunction5(View v)
-    {
-        Intent intent= new Intent(getApplicationContext(), soorma.class);
-        startActivity(intent);
-    }
-    public void buttonFunction6(View v)
-    {
-        Intent intent= new Intent(getApplicationContext(), momo.class);
-        startActivity(intent);
-    }
-    public void buttonFunction7(View v)
-    {
-        Intent intent= new Intent(getApplicationContext(), tea_talks.class);
-        startActivity(intent);
-    }
-    public void buttonFunction8(View v)
-    {
-        Intent intent= new Intent(getApplicationContext(), sagar.class);
-        startActivity(intent);
-    }
-    public void buttonFunction9(View v)
-    {
-        Intent intent= new Intent(getApplicationContext(), kafe.class);
-        startActivity(intent);
-    }
-    public void buttonFunction10(View v)
-    {
-        Intent intent= new Intent(getApplicationContext(), wonder.class);
-        startActivity(intent);
-    }
-    public void buttonFunction11(View v)
-    {
-        Intent intent= new Intent(getApplicationContext(), rice.class);
-        startActivity(intent);
-    }
-    public void buttonFunction12(View v)
-    {
-        Intent intent= new Intent(getApplicationContext(), hong.class);
-        startActivity(intent);
-    }
-    public void buttonFunction13(View v)
-    {
-        Intent intent= new Intent(getApplicationContext(), abh.class);
-        startActivity(intent);
-    }
-    public void buttonFunction14(View v)
-    {
-        Intent intent= new Intent(getApplicationContext(), bhopalex.class);
-        startActivity(intent);
-    }
+    /*
     public void buttonFunction15(View v)
     {
         Intent intent= new Intent(getApplicationContext(), natural.class);
         startActivity(intent);
     }
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_restaurant);
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_restaurants, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
+*/
 }

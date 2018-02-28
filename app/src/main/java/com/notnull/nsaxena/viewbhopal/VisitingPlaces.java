@@ -80,7 +80,6 @@ public class VisitingPlaces extends AppCompatActivity implements VisitingPlacesL
     @Override
     public void onItemClick(View view, int postition) {
         Log.d(TAG, "onItemClick: starts");
-        Toast.makeText(this,"Normal tap at position "+postition,Toast.LENGTH_LONG).show();
         Intent intent = new Intent(this,VisitingPlaceDetails.class);
         intent.putExtra("VISITING_PLACE_TRANSFER", myAdapter.getVistingPlace(postition));
         startActivity(intent);
