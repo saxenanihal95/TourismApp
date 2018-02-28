@@ -60,8 +60,8 @@ public class RestaurantDetails extends AppCompatActivity {
             public void onClick(View view) {
 
                 Intent intent= new Intent(getApplicationContext(),MapsActivity.class);
-                intent.putExtra("LAT",restaurant.getLatitude());
-                intent.putExtra("LNG",restaurant.getLongitude());
+                intent.putExtra("LAT",Double.valueOf(restaurant.getLatitude()));
+                intent.putExtra("LNG",Double.valueOf(restaurant.getLongitude()));
                 startActivity(intent);            }
         });
     }

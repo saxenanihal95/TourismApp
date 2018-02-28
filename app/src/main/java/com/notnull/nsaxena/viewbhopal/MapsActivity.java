@@ -13,8 +13,9 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
-    public double LAT;
-    public double LNG;
+    public double lat;
+    public double lng;
+    public String title;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,8 +24,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
-        LAT=getIntent().getExtras().getDouble("LAT");
-         LNG=getIntent().getExtras().getDouble("LNG");
+        lat=getIntent().getExtras().getDouble("LAT");
+        lng=getIntent().getExtras().getDouble("LNG");
 
 
     }
@@ -44,8 +45,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
 
         // Add a marker to place and move the camera
-        LatLng pos = new LatLng(LAT, LNG);
-        mMap.addMarker(new MarkerOptions().position(pos));
+        LatLng pos = new LatLng(lat, lng);
+        mMap.addMarker(new MarkerOptions().position(pos).title(title));
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(pos,25));
     }
 }

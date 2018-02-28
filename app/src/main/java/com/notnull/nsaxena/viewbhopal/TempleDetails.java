@@ -44,8 +44,8 @@ public class TempleDetails extends AppCompatActivity {
             public void onClick(View view) {
 
                 Intent intent= new Intent(getApplicationContext(),MapsActivity.class);
-                intent.putExtra("LAT",temple.getLatitude());
-                intent.putExtra("LNG",temple.getLongitude());
+                intent.putExtra("LAT",Double.valueOf(temple.getLatitude()));
+                intent.putExtra("LNG",Double.valueOf(temple.getLongitude()));
                 startActivity(intent);            }
         });
     }

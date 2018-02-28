@@ -51,8 +51,8 @@ public class VisitingPlaceDetails extends AppCompatActivity {
             public void onClick(View view) {
 
                 Intent intent= new Intent(getApplicationContext(),MapsActivity.class);
-                intent.putExtra("LAT",visitingPlace.getLatitude());
-                intent.putExtra("LNG",visitingPlace.getLongitude());
+                intent.putExtra("LAT",Double.valueOf(visitingPlace.getLatitude()));
+                intent.putExtra("LNG",Double.valueOf(visitingPlace.getLongitude()));
                 startActivity(intent);            }
         });
 
