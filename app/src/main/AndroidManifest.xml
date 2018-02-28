@@ -90,50 +90,8 @@
             android:name=".wonder"
             android:label="@string/title_activity_wonder" />
         <activity
-            android:name=".birla"
-            android:label="@string/title_activity_birla" />
-        <activity
             android:name=".bhoj"
             android:label="@string/title_activity_bhoj" />
-        <activity
-            android:name=".malai"
-            android:label="@string/title_activity_malai" />
-        <activity
-            android:name=".mata"
-            android:label="@string/title_activity_mata" />
-        <activity
-            android:name=".gufa"
-            android:label="@string/title_activity_gufa" />
-        <activity
-            android:name=".jain"
-            android:label="@string/title_activity_jain" />
-        <activity
-            android:name=".kali"
-            android:label="@string/title_activity_kali" />
-        <activity
-            android:name=".moti"
-            android:label="@string/title_activity_moti" />
-        <activity
-            android:name=".sai"
-            android:label="@string/title_activity_sai" />
-        <activity
-            android:name=".bari"
-            android:label="@string/title_activity_bari" />
-        <activity
-            android:name=".maa"
-            android:label="@string/title_activity_maa" />
-        <activity
-            android:name=".guru"
-            android:label="@string/title_activity_guru" />
-        <activity
-            android:name=".she"
-            android:label="@string/title_activity_she" />
-        <activity
-            android:name=".gan"
-            android:label="@string/title_activity_gan" />
-        <activity
-            android:name=".neo"
-            android:label="@string/title_activity_neo" />
         <activity
             android:name=".science"
             android:label="@string/title_activity_science" />
@@ -169,9 +127,10 @@
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
         <activity
-            android:name=".VisitingPlaceDetail"
+            android:name=".VisitingPlaceDetails"
             android:label="@string/title_activity_visiting_place_detail"
             android:theme="@style/AppTheme" />
+        <activity android:name=".TempleDetails"></activity>
     </application>
 
 </manifest>

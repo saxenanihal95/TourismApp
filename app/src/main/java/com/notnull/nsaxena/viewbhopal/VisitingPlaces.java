@@ -14,7 +14,6 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -82,7 +81,7 @@ public class VisitingPlaces extends AppCompatActivity implements VisitingPlacesL
     public void onItemClick(View view, int postition) {
         Log.d(TAG, "onItemClick: starts");
         Toast.makeText(this,"Normal tap at position "+postition,Toast.LENGTH_LONG).show();
-        Intent intent = new Intent(this,VisitingPlaceDetail.class);
+        Intent intent = new Intent(this,VisitingPlaceDetails.class);
         intent.putExtra("VISITING_PLACE_TRANSFER", myAdapter.getVistingPlace(postition));
         startActivity(intent);
     }

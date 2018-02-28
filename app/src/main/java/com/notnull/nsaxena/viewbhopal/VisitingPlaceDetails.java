@@ -11,12 +11,14 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 
-public class VisitingPlaceDetail extends AppCompatActivity {
-    private static final String TAG = "VisitingPlaceDetail";
+public class VisitingPlaceDetails extends AppCompatActivity {
+    private static final String TAG = "VisitingPlaceDetails";
 
     TextView address,goodFor,openingHours,entryFee,website,visitDuration,about;
 
     ImageView visitingPlaceImage;
+
+    Button mapButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +44,7 @@ public class VisitingPlaceDetail extends AppCompatActivity {
         website.setText(visitingPlace.getWebsites());
         visitDuration.setText(visitingPlace.getVisitDuration());
         about.setText(visitingPlace.getAbout());
-        Button mapButton=(Button) findViewById(R.id.mapButton);
+        mapButton=(Button) findViewById(R.id.mapButton);
 
         mapButton.setOnClickListener(new View.OnClickListener() {
             @Override
