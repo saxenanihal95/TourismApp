@@ -1,6 +1,5 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,7 +8,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity"
-    tools:layout_editor_absoluteY="25dp">
+    tools:layout_editor_absoluteY="25dp"
+    android:background="@color/colorPrimaryDark">
 
     <ScrollView
         android:layout_width="wrap_content"
@@ -22,13 +22,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0">
 
-        <!--<LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:orientation="vertical">-->
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -43,7 +36,7 @@
                 android:src="@drawable/r"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"></ImageButton>
+                app:layout_constraintTop_toTopOf="parent"/>
 
             <TextView
                 android:id="@+id/restaurant_text"
@@ -52,10 +45,11 @@
                 android:layout_gravity="center"
                 android:clickable="false"
                 android:text="Restaurants"
+                android:textColor="@android:color/background_light"
                 android:textSize="30sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/restaurant_button"></TextView>
+                app:layout_constraintTop_toBottomOf="@+id/restaurant_button"/>
 
             <ImageButton
                 android:id="@+id/temple_button"
@@ -69,7 +63,7 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/restaurant_text"></ImageButton>
+                app:layout_constraintTop_toBottomOf="@+id/restaurant_text"/>
 
             <TextView
                 android:id="@+id/temple_text"
@@ -83,7 +77,8 @@
                 android:textSize="30sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/temple_button"></TextView>
+                app:layout_constraintTop_toBottomOf="@+id/temple_button"
+                android:textColor="@android:color/background_light"/>
 
             <ImageButton
                 android:id="@+id/visting_place_button"
@@ -97,7 +92,7 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/temple_text"></ImageButton>
+                app:layout_constraintTop_toBottomOf="@+id/temple_text"/>
 
             <TextView
                 android:id="@+id/visting_place_text"
@@ -113,7 +108,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/visting_place_button"></TextView>
+                app:layout_constraintTop_toBottomOf="@+id/visting_place_button"
+                android:textColor="@android:color/background_light"/>
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
 </android.support.constraint.ConstraintLayout>

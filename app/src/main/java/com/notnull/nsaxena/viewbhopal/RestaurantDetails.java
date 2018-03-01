@@ -1,6 +1,7 @@
 package com.notnull.nsaxena.viewbhopal;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -58,17 +59,23 @@ public class RestaurantDetails extends AppCompatActivity {
             {
                 ImageView currentImage = new ImageView(this);
                 linearLayout.addView(currentImage);
-                Glide.with(getApplicationContext()).load(menuImage).into(currentImage);
+                Glide.with(getApplicationContext())
+                    .load(menuImage)
+                    .thumbnail(Glide.with(getApplicationContext()).load(R.drawable.giphy))
+                    .apply(new RequestOptions()
+                            .error(R.drawable.broken_image))
+                    .into(currentImage);
             }
         }else {
             TextView tv=new TextView(this);
             tv.setTextSize(24);
+            tv.setTextColor(Color.WHITE);
             tv.setText("Sorry no Menu right now !");
             linearLayout.addView(tv);
         }
 
 
-        mapButton=(Button) findViewById(R.id.mapButton);
+        mapButton=findViewById(R.id.mapButton);
 
         mapButton.setOnClickListener(new View.OnClickListener() {
             @Override

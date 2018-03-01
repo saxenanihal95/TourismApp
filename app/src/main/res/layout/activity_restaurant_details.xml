@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.notnull.nsaxena.viewbhopal.RestaurantDetails">
+    tools:context="com.notnull.nsaxena.viewbhopal.RestaurantDetails"
+    android:background="@color/colorPrimaryDark">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -39,16 +40,17 @@
                 android:paddingTop="20dp"
                 android:text="Address &amp; contact:-"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textColor="#000000"
                 android:textSize="30sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@android:color/background_light"/>
 
             <TextView
                 android:id="@+id/drop1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/head1"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:textColor="@android:color/background_light"/>
 
             <TextView
                 android:id="@+id/head2"
@@ -59,16 +61,17 @@
                 android:paddingTop="20dp"
                 android:text="Cuisines:-"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textColor="#000000"
                 android:textSize="30sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@android:color/background_light"/>
 
             <TextView
                 android:id="@+id/drop2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/head2"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:textColor="@android:color/background_light"/>
 
             <TextView
                 android:id="@+id/head3"
@@ -79,16 +82,17 @@
                 android:paddingTop="20dp"
                 android:text="Opening Hours:-"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textColor="#000000"
                 android:textSize="30sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@android:color/background_light"/>
 
             <TextView
                 android:id="@+id/drop3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/head3"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:textColor="@android:color/background_light"/>
 
 
             <TextView
@@ -100,16 +104,17 @@
                 android:paddingTop="20dp"
                 android:text="Highlights:-"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textColor="#000000"
                 android:textSize="30sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@android:color/background_light"/>
 
             <TextView
                 android:id="@+id/drop4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/head4"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:textColor="@android:color/background_light"/>
 
             <TextView
                 android:id="@+id/head5"
@@ -120,16 +125,17 @@
                 android:paddingTop="20dp"
                 android:text="Cost:-"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textColor="#000000"
                 android:textSize="30sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@android:color/background_light"/>
 
             <TextView
                 android:id="@+id/drop5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/head5"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:textColor="@android:color/background_light"/>
 
             <TextView
                 android:id="@+id/head6"
@@ -138,9 +144,9 @@
                 android:layout_below="@id/head5"
                 android:layout_centerVertical="true"
                 android:text="Menu"
-                android:textColor="#000000"
                 android:textSize="30sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@android:color/background_light"/>
 
             <HorizontalScrollView
                 android:layout_width="match_parent"
