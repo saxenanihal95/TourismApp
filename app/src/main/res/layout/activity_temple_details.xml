@@ -19,92 +19,121 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/linearLayout2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="wrap_content">
 
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:src="@drawable/placeholder" />
+                android:layout_marginTop="8dp"
+                android:src="@drawable/placeholder"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" android:contentDescription="@string/todo" />
 
             <TextView
                 android:id="@+id/head1"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
+                android:layout_marginTop="8dp"
                 android:paddingTop="20dp"
-                android:text="Address:-"
+                android:text="@string/address_amp_contact"
                 android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/background_light"
                 android:textSize="30sp"
                 android:textStyle="bold"
-                android:textColor="@android:color/background_light"
-                />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
 
             <TextView
                 android:id="@+id/drop1"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/head1"
+                android:textColor="@android:color/background_light"
                 android:textSize="24sp"
-                android:textColor="@android:color/background_light"/>
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/head1" />
 
             <TextView
                 android:id="@+id/head2"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/drop1"
-                android:layout_centerVertical="true"
+                android:layout_marginTop="8dp"
                 android:paddingTop="20dp"
-                android:text="Opening Hours:-"
+                android:text="@string/opening_hours"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textColor="@android:color/background_light"
                 android:textSize="30sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/drop1" />
 
             <TextView
                 android:id="@+id/drop2"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/head2"
+                android:layout_marginTop="60dp"
+                android:textColor="@android:color/background_light"
                 android:textSize="24sp"
-                android:textColor="@android:color/background_light"/>
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/head2" />
 
             <TextView
                 android:id="@+id/head3"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/drop1"
-                android:layout_centerVertical="true"
+                android:layout_marginTop="8dp"
                 android:paddingTop="20dp"
-                android:text="About:-"
+                android:text="@string/about"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textColor="@android:color/background_light"
                 android:textSize="30sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/drop2" />
 
             <TextView
                 android:id="@+id/drop3"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/head3"
                 android:text=""
+                android:textColor="@android:color/background_light"
                 android:textSize="24sp"
-                android:textColor="@android:color/background_light"/>
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/head3" />
 
             <Button
                 android:id="@+id/mapButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/map_icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/drop3"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            <TextView
+                android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/drop3"
-                android:layout_centerHorizontal="true"
-                android:text="Map" />
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:text="@string/location"
+                android:textColor="@android:color/background_light"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mapButton" />
 
-        </LinearLayout>
+        </android.support.constraint.ConstraintLayout>
     </ScrollView>
 
 </android.support.constraint.ConstraintLayout>

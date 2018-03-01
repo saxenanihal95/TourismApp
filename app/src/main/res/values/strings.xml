@@ -78,6 +78,20 @@
     <string name="google_maps_key" templateMergeStrategy="preserve">AIzaSyC9enByVf1vTDoehLZEJTObbRIOtYyHOL0</string>
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_visiting_place_detail">VisitingPlaceDetail</string>
+    <string name="opening_hours">Opening Hours:-</string>
+    <string name="cuisines">Cuisines:-</string>
+    <string name="highlights">Highlights:-</string>
+    <string name="cost">Cost:-</string>
+    <string name="menu">Menu:-</string>
+    <string name="map">Map</string>
+    <string name="address_amp_contact"><![CDATA[Address & contact:-]]></string>
+    <string name="todo">TODO</string>
+    <string name="location">Location</string>
+    <string name="good_for">Good For:-</string>
+    <string name="entry_fee">Entry Fee:-</string>
+    <string name="visit_duration">Visit Duration:-</string>
+    <string name="about">About:-</string>
+    <string name="websites">Websites:-</string>
 
 
 </resources>
