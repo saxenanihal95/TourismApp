@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 
 import java.util.List;
 
@@ -42,7 +43,12 @@ public class TemplesAdapter extends RecyclerView.Adapter<TemplesAdapter.MyViewHo
         Temple temple =mTemples.get(position);
         holder.placeTitle.setText(temple.getTitle());
         // loading album cover using Glide library
-        Glide.with(context).load(temple.getImageUrl()).into(holder.placeImage);
+        Glide.with(context)
+                .load(temple.getImageUrl())
+                .thumbnail(Glide.with(context).load(R.drawable.giphy))
+                .apply(new RequestOptions()
+                        .error(R.drawable.broken_image))
+                .into(holder.placeImage);
     }
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView placeTitle;

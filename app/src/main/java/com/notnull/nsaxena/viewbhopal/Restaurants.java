@@ -7,6 +7,8 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
+import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
 
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
@@ -25,17 +27,22 @@ public class Restaurants extends AppCompatActivity implements RestaurantsListene
     List mRestaurants = new ArrayList<Restaurant>();
     private DatabaseReference mDatabase;
     private static final String TAG = "Restaurants";
+    ProgressBar progressBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         mDatabase = FirebaseDatabase.getInstance().getReference();
+
         mDatabase.child("restaurants").addChildEventListener(new ChildEventListener() {
+
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                 loadData(dataSnapshot);
+
             }
 
             @Override
             public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+
                 loadData(dataSnapshot);
             }
 
@@ -54,25 +61,25 @@ public class Restaurants extends AppCompatActivity implements RestaurantsListene
 
             }
         });
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.restaurants);
+        progressBar=findViewById(R.id.progress);
         myRecyclerView =(RecyclerView)findViewById(R.id.recycler_view);
         myRecyclerView.addOnItemTouchListener(new RestaurantsListener(this,myRecyclerView,this));
+
         Log.d(TAG, "onCreate: "+ mRestaurants);
 
     }
 
     public void loadData(DataSnapshot dataSnapshot)
     {
-
         Restaurant restaurant=dataSnapshot.getValue(Restaurant.class);
         mRestaurants.add(restaurant);
-
         myAdapter = new RestaurantsAdapter(Restaurants.this, mRestaurants);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getApplicationContext(),2);
         myRecyclerView.setLayoutManager(gridLayoutManager);
         myRecyclerView.setAdapter(myAdapter);
+        progressBar.setVisibility(View.INVISIBLE);
     }
 
     @Override
@@ -88,12 +95,4 @@ public class Restaurants extends AppCompatActivity implements RestaurantsListene
 
     }
 
-    /*
-    public void buttonFunction15(View v)
-    {
-        Intent intent= new Intent(getApplicationContext(), natural.class);
-        startActivity(intent);
-    }
-
-*/
 }

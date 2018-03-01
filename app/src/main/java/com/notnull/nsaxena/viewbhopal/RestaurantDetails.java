@@ -11,6 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 
 public class RestaurantDetails extends AppCompatActivity {
 
@@ -39,19 +40,33 @@ public class RestaurantDetails extends AppCompatActivity {
         Intent intent = getIntent();
         final Restaurant restaurant = (Restaurant)intent.getSerializableExtra("RESTAURANT_TRANSFER");
 
-        Glide.with(getApplicationContext()).load(restaurant.getImageUrl()).into(restaurantImage);
+        Glide.with(getApplicationContext())
+                .load(restaurant.getImageUrl())
+                .thumbnail(Glide.with(getApplicationContext()).load(R.drawable.giphy))
+                .apply(new RequestOptions()
+                        .error(R.drawable.broken_image))
+                .into(restaurantImage);
         address.setText(restaurant.getAddress());
         cuisines.setText(restaurant.getCuisines());
         openingHours.setText(restaurant.getOpeningHours());
         highlights.setText(restaurant.getHighlights());
         cost.setText(restaurant.getCost());
 
-        for(String menuImage:restaurant.getMenuImages())
+        if(restaurant.getMenuImages()!=null)
         {
-            ImageView currentImage = new ImageView(this);
-            linearLayout.addView(currentImage);
-            Glide.with(getApplicationContext()).load(menuImage).into(currentImage);
+            for(String menuImage:restaurant.getMenuImages())
+            {
+                ImageView currentImage = new ImageView(this);
+                linearLayout.addView(currentImage);
+                Glide.with(getApplicationContext()).load(menuImage).into(currentImage);
+            }
+        }else {
+            TextView tv=new TextView(this);
+            tv.setTextSize(24);
+            tv.setText("Sorry no Menu right now !");
+            linearLayout.addView(tv);
         }
+
 
         mapButton=(Button) findViewById(R.id.mapButton);
 

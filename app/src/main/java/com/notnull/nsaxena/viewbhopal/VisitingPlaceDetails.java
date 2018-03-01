@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 
 public class VisitingPlaceDetails extends AppCompatActivity {
     private static final String TAG = "VisitingPlaceDetails";
@@ -36,7 +37,12 @@ public class VisitingPlaceDetails extends AppCompatActivity {
         visitingPlaceImage=findViewById(R.id.imageView);
         Intent intent = getIntent();
         final VisitingPlace visitingPlace = (VisitingPlace)intent.getSerializableExtra("VISITING_PLACE_TRANSFER");
-        Glide.with(getApplicationContext()).load(visitingPlace.getImageUrl()).into(visitingPlaceImage);
+        Glide.with(getApplicationContext())
+                .load(visitingPlace.getImageUrl())
+                .thumbnail(Glide.with(getApplicationContext()).load(R.drawable.giphy))
+                .apply(new RequestOptions()
+                        .error(R.drawable.broken_image))
+                .into(visitingPlaceImage);
         address.setText(visitingPlace.getAddress());
         goodFor.setText(visitingPlace.getGoodFor());
         openingHours.setText(visitingPlace.getOpeningHours());

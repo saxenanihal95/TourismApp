@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 
 public class TempleDetails extends AppCompatActivity {
 
@@ -32,7 +33,12 @@ public class TempleDetails extends AppCompatActivity {
         Intent intent = getIntent();
         final Temple temple = (Temple)intent.getSerializableExtra("TEMPLE_TRANSFER");
 
-        Glide.with(getApplicationContext()).load(temple.getImageUrl()).into(templeImage);
+        Glide.with(getApplicationContext())
+                .load(temple.getImageUrl())
+                .thumbnail(Glide.with(getApplicationContext()).load(R.drawable.giphy))
+                .apply(new RequestOptions()
+                        .error(R.drawable.broken_image))
+                .into(templeImage);
         address.setText(temple.getAddress());
         openingHours.setText(temple.getOpeningHours());
         about.setText(temple.getAbout());

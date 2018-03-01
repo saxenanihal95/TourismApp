@@ -6,6 +6,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.google.firebase.database.ChildEventListener;
@@ -27,6 +28,8 @@ public class VisitingPlaces extends AppCompatActivity implements VisitingPlacesL
     List mVistingPlaceList = new ArrayList<VisitingPlaces>();
     private DatabaseReference mDatabase;
     private static final String TAG = "VisitingPlaces";
+    ProgressBar progressBar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         mDatabase = FirebaseDatabase.getInstance().getReference();
@@ -59,6 +62,7 @@ public class VisitingPlaces extends AppCompatActivity implements VisitingPlacesL
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.visiting_places);
+        progressBar=findViewById(R.id.progress);
         myRecyclerView =(RecyclerView)findViewById(R.id.recycler_view);
         myRecyclerView.addOnItemTouchListener(new VisitingPlacesListener(this,myRecyclerView,this));
         Log.d(TAG, "onCreate: "+mVistingPlaceList);
@@ -75,6 +79,7 @@ public class VisitingPlaces extends AppCompatActivity implements VisitingPlacesL
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getApplicationContext(),2);
         myRecyclerView.setLayoutManager(gridLayoutManager);
         myRecyclerView.setAdapter(myAdapter);
+        progressBar.setVisibility(View.INVISIBLE);
     }
 
     @Override

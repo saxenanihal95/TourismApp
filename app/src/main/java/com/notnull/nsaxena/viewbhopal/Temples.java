@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.google.firebase.database.ChildEventListener;
@@ -28,6 +29,7 @@ public class Temples extends AppCompatActivity implements TemplesListener.OnRecl
     List mTemples = new ArrayList<Temple>();
     private DatabaseReference mDatabase;
     private static final String TAG = "Temples";
+    ProgressBar progressBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         mDatabase = FirebaseDatabase.getInstance().getReference();
@@ -60,6 +62,7 @@ public class Temples extends AppCompatActivity implements TemplesListener.OnRecl
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.temples);
+        progressBar=findViewById(R.id.progress);
         myRecyclerView =(RecyclerView)findViewById(R.id.recycler_view);
         myRecyclerView.addOnItemTouchListener(new TemplesListener(this,myRecyclerView,this));
         Log.d(TAG, "onCreate: "+mTemples);
@@ -76,6 +79,7 @@ public class Temples extends AppCompatActivity implements TemplesListener.OnRecl
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getApplicationContext(),2);
         myRecyclerView.setLayoutManager(gridLayoutManager);
         myRecyclerView.setAdapter(myAdapter);
+        progressBar.setVisibility(View.INVISIBLE);
     }
 
     @Override

@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 
 import java.util.List;
 
@@ -44,7 +45,12 @@ class VisitingPlacesAdapter extends RecyclerView.Adapter<VisitingPlacesAdapter.M
         VisitingPlace visitingPlace =visitingPlacesList.get(position);
         holder.placeTitle.setText(visitingPlace.getTitle());
         // loading album cover using Glide library
-        Glide.with(context).load(visitingPlace.getImageUrl()).into(holder.placeImage);
+        Glide.with(context)
+                .load(visitingPlace.getImageUrl())
+                .thumbnail(Glide.with(context).load(R.drawable.giphy))
+                .apply(new RequestOptions()
+                        .error(R.drawable.broken_image))
+                .into(holder.placeImage);
     }
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView placeTitle;
