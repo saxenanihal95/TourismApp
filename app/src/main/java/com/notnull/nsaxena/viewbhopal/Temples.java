@@ -65,7 +65,6 @@ public class Temples extends AppCompatActivity implements TemplesListener.OnRecl
         progressBar=findViewById(R.id.progress);
         myRecyclerView =(RecyclerView)findViewById(R.id.recycler_view);
         myRecyclerView.addOnItemTouchListener(new TemplesListener(this,myRecyclerView,this));
-        Log.d(TAG, "onCreate: "+mTemples);
 
     }
 
@@ -84,7 +83,6 @@ public class Temples extends AppCompatActivity implements TemplesListener.OnRecl
 
     @Override
     public void onItemClick(View view, int postition) {
-        Log.d(TAG, "onItemClick: starts");
         Intent intent = new Intent(this,TempleDetails.class);
         intent.putExtra("TEMPLE_TRANSFER", myAdapter.getTemple(postition));
         startActivity(intent);

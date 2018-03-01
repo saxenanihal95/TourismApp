@@ -25,10 +25,8 @@ class VisitingPlacesListener extends RecyclerView.SimpleOnItemTouchListener{
         mGetGestureDetector=new GestureDetectorCompat(context,new GestureDetector.SimpleOnGestureListener(){
             @Override
             public boolean onSingleTapUp(MotionEvent e) {
-                Log.d(TAG, "onSingleTapUp: starts");
                 View childVeiw = recyclerView.findChildViewUnder(e.getX(),e.getY());
                 if(childVeiw!=null&&mListener!=null){
-                    Log.d(TAG, "onSingleTapUp: calling listener onItemClick");
                     mListener.onItemClick(childVeiw,recyclerView.getChildAdapterPosition(childVeiw));
                 }
                 return true;
@@ -36,11 +34,8 @@ class VisitingPlacesListener extends RecyclerView.SimpleOnItemTouchListener{
 
             @Override
             public void onLongPress(MotionEvent e) {
-
-                Log.d(TAG, "onLongPress: starts");
                 View childView=recyclerView.findChildViewUnder(e.getX(),e.getY());
                 if(childView!=null && mListener!=null){
-                    Log.d(TAG, "onLongPress: calling listener onItemClick");
                     mListener.onItemClick(childView,recyclerView.getChildAdapterPosition(childView));
                 }
             }
@@ -49,13 +44,10 @@ class VisitingPlacesListener extends RecyclerView.SimpleOnItemTouchListener{
 
     @Override
     public boolean onInterceptTouchEvent(RecyclerView rv, MotionEvent e) {
-        Log.d(TAG, "onInterceptTouchEvent: starts");
         if(mGetGestureDetector!=null){
             boolean result =mGetGestureDetector.onTouchEvent(e);
-            Log.d(TAG, "onInterceptTouchEvent: returned "+result);
             return result;
         }else {
-            Log.d(TAG, "onInterceptTouchEvent: returned false");
             return false;
         }
 

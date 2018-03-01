@@ -65,7 +65,6 @@ public class VisitingPlaces extends AppCompatActivity implements VisitingPlacesL
         progressBar=findViewById(R.id.progress);
         myRecyclerView =(RecyclerView)findViewById(R.id.recycler_view);
         myRecyclerView.addOnItemTouchListener(new VisitingPlacesListener(this,myRecyclerView,this));
-        Log.d(TAG, "onCreate: "+mVistingPlaceList);
 
     }
 
@@ -84,7 +83,6 @@ public class VisitingPlaces extends AppCompatActivity implements VisitingPlacesL
 
     @Override
     public void onItemClick(View view, int postition) {
-        Log.d(TAG, "onItemClick: starts");
         Intent intent = new Intent(this,VisitingPlaceDetails.class);
         intent.putExtra("VISITING_PLACE_TRANSFER", myAdapter.getVistingPlace(postition));
         startActivity(intent);

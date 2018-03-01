@@ -67,7 +67,6 @@ public class Restaurants extends AppCompatActivity implements RestaurantsListene
         myRecyclerView =(RecyclerView)findViewById(R.id.recycler_view);
         myRecyclerView.addOnItemTouchListener(new RestaurantsListener(this,myRecyclerView,this));
 
-        Log.d(TAG, "onCreate: "+ mRestaurants);
 
     }
 
@@ -84,7 +83,6 @@ public class Restaurants extends AppCompatActivity implements RestaurantsListene
 
     @Override
     public void onItemClick(View view, int postition) {
-        Log.d(TAG, "onItemClick: starts");
         Intent intent = new Intent(this,RestaurantDetails.class);
         intent.putExtra("RESTAURANT_TRANSFER", myAdapter.getRestaurant(postition));
         startActivity(intent);
