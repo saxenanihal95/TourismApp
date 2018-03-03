@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.notnull.nsaxena.viewbhopal">
+    package="com.somesh.android.bhopaldarshan">
 
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -17,7 +17,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name="com.somesh.android.bhopaldarshan.MainActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,13 +26,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Restaurants"
+            android:name="com.somesh.android.bhopaldarshan.Restaurants"
             android:label="@string/title_activity_restaurants" />
         <activity
-            android:name=".Temples"
+            android:name="com.somesh.android.bhopaldarshan.Temples"
             android:label="@string/title_activity_temples" />
         <activity
-            android:name=".VisitingPlaces"
+            android:name="com.somesh.android.bhopaldarshan.VisitingPlaces"
             android:label="@string/title_activity_visitingplaces" />
 
         <!--
@@ -48,14 +48,14 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".MapsActivity"
+            android:name="com.somesh.android.bhopaldarshan.MapsActivity"
             android:label="@string/title_activity_maps" />
         <activity
-            android:name=".VisitingPlaceDetails"
+            android:name="com.somesh.android.bhopaldarshan.VisitingPlaceDetails"
             android:label="@string/title_activity_visiting_place_detail"
             android:theme="@style/AppTheme" />
-        <activity android:name=".TempleDetails" />
-        <activity android:name=".RestaurantDetails" />
+        <activity android:name="com.somesh.android.bhopaldarshan.TempleDetails" />
+        <activity android:name="com.somesh.android.bhopaldarshan.RestaurantDetails" />
     </application>
 
 </manifest>

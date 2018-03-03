@@ -1,4 +1,4 @@
-package com.notnull.nsaxena.viewbhopal;
+package com.somesh.android.bhopaldarshan;
 
 import java.io.Serializable;
 import java.util.List;

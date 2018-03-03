@@ -1,16 +1,11 @@
-package com.notnull.nsaxena.viewbhopal;
-
+package com.somesh.android.bhopaldarshan;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.ProgressBar;
-import android.widget.Toast;
 
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
@@ -22,18 +17,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class Temples extends AppCompatActivity implements TemplesListener.OnReclyclerClickListener{
+
+public class VisitingPlaces extends AppCompatActivity implements VisitingPlacesListener.OnReclyclerClickListener{
 
     RecyclerView myRecyclerView;
-    TemplesAdapter myAdapter;
-    List mTemples = new ArrayList<Temple>();
+    VisitingPlacesAdapter myAdapter;
+    //List mVistingPlaceList = new ArrayList<>(Arrays.asList("Person 1", "Person 2", "Person 3", "Person 4", "Person 5", "Person 6", "Person 7"));
+    List mVistingPlaceList = new ArrayList<VisitingPlaces>();
     private DatabaseReference mDatabase;
-    private static final String TAG = "Temples";
+    private static final String TAG = "VisitingPlaces";
     ProgressBar progressBar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         mDatabase = FirebaseDatabase.getInstance().getReference();
-        mDatabase.child("temples").addChildEventListener(new ChildEventListener() {
+        mDatabase.child("visiting places").addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                 loadData(dataSnapshot);
@@ -61,20 +59,20 @@ public class Temples extends AppCompatActivity implements TemplesListener.OnRecl
         });
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.temples);
+        setContentView(R.layout.visiting_places);
         progressBar=findViewById(R.id.progress);
         myRecyclerView =(RecyclerView)findViewById(R.id.recycler_view);
-        myRecyclerView.addOnItemTouchListener(new TemplesListener(this,myRecyclerView,this));
+        myRecyclerView.addOnItemTouchListener(new VisitingPlacesListener(this,myRecyclerView,this));
 
     }
 
     public void loadData(DataSnapshot dataSnapshot)
     {
 
-        Temple temple=dataSnapshot.getValue(Temple.class);
-        mTemples.add(temple);
+        VisitingPlace visitingPlace=dataSnapshot.getValue(VisitingPlace.class);
+        mVistingPlaceList.add(visitingPlace);
 
-        myAdapter = new TemplesAdapter(Temples.this,mTemples);
+        myAdapter = new VisitingPlacesAdapter(VisitingPlaces.this,mVistingPlaceList);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getApplicationContext(),2);
         myRecyclerView.setLayoutManager(gridLayoutManager);
         myRecyclerView.setAdapter(myAdapter);
@@ -83,8 +81,8 @@ public class Temples extends AppCompatActivity implements TemplesListener.OnRecl
 
     @Override
     public void onItemClick(View view, int postition) {
-        Intent intent = new Intent(this,TempleDetails.class);
-        intent.putExtra("TEMPLE_TRANSFER", myAdapter.getTemple(postition));
+        Intent intent = new Intent(this,VisitingPlaceDetails.class);
+        intent.putExtra("VISITING_PLACE_TRANSFER", myAdapter.getVistingPlace(postition));
         startActivity(intent);
     }
 
@@ -92,4 +90,6 @@ public class Temples extends AppCompatActivity implements TemplesListener.OnRecl
     public void onItemLongClick(View view, int postition) {
 
     }
+
 }
+

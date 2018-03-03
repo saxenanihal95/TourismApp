@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.notnull.nsaxena.viewbhopal.TempleDetails"
+    tools:context="com.somesh.android.bhopaldarshan.TempleDetails"
     android:background="@color/colorPrimaryDark">
 
     <ScrollView

@@ -1,4 +1,4 @@
-package com.notnull.nsaxena.viewbhopal;
+package com.somesh.android.bhopaldarshan;
 
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;

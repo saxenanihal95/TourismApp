@@ -1,4 +1,4 @@
-package com.notnull.nsaxena.viewbhopal;
+package com.somesh.android.bhopaldarshan;
 
 /**
  * Created by nsaxena on 27/2/18.

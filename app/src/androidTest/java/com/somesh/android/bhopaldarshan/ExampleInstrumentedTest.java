@@ -1,4 +1,4 @@
-package com.notnull.nsaxena.viewbhopal;
+package com.somesh.android.bhopaldarshan;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

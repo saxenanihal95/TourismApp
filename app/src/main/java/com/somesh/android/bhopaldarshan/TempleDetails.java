@@ -1,4 +1,4 @@
-package com.notnull.nsaxena.viewbhopal;
+package com.somesh.android.bhopaldarshan;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;

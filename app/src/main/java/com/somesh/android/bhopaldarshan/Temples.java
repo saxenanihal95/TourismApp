@@ -1,14 +1,12 @@
-package com.notnull.nsaxena.viewbhopal;
+package com.somesh.android.bhopaldarshan;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.View;
 import android.widget.ProgressBar;
-import android.widget.RelativeLayout;
 
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
@@ -20,29 +18,25 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class Restaurants extends AppCompatActivity implements RestaurantsListener.OnReclyclerClickListener{
+public class Temples extends AppCompatActivity implements TemplesListener.OnReclyclerClickListener{
 
     RecyclerView myRecyclerView;
-    RestaurantsAdapter myAdapter;
-    List mRestaurants = new ArrayList<Restaurant>();
+    TemplesAdapter myAdapter;
+    List mTemples = new ArrayList<Temple>();
     private DatabaseReference mDatabase;
-    private static final String TAG = "Restaurants";
+    private static final String TAG = "Temples";
     ProgressBar progressBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         mDatabase = FirebaseDatabase.getInstance().getReference();
-
-        mDatabase.child("restaurants").addChildEventListener(new ChildEventListener() {
-
+        mDatabase.child("temples").addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                 loadData(dataSnapshot);
-
             }
 
             @Override
             public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-
                 loadData(dataSnapshot);
             }
 
@@ -61,20 +55,22 @@ public class Restaurants extends AppCompatActivity implements RestaurantsListene
 
             }
         });
+
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.restaurants);
+        setContentView(R.layout.temples);
         progressBar=findViewById(R.id.progress);
         myRecyclerView =(RecyclerView)findViewById(R.id.recycler_view);
-        myRecyclerView.addOnItemTouchListener(new RestaurantsListener(this,myRecyclerView,this));
-
+        myRecyclerView.addOnItemTouchListener(new TemplesListener(this,myRecyclerView,this));
 
     }
 
     public void loadData(DataSnapshot dataSnapshot)
     {
-        Restaurant restaurant=dataSnapshot.getValue(Restaurant.class);
-        mRestaurants.add(restaurant);
-        myAdapter = new RestaurantsAdapter(Restaurants.this, mRestaurants);
+
+        Temple temple=dataSnapshot.getValue(Temple.class);
+        mTemples.add(temple);
+
+        myAdapter = new TemplesAdapter(Temples.this,mTemples);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getApplicationContext(),2);
         myRecyclerView.setLayoutManager(gridLayoutManager);
         myRecyclerView.setAdapter(myAdapter);
@@ -83,8 +79,8 @@ public class Restaurants extends AppCompatActivity implements RestaurantsListene
 
     @Override
     public void onItemClick(View view, int postition) {
-        Intent intent = new Intent(this,RestaurantDetails.class);
-        intent.putExtra("RESTAURANT_TRANSFER", myAdapter.getRestaurant(postition));
+        Intent intent = new Intent(this,TempleDetails.class);
+        intent.putExtra("TEMPLE_TRANSFER", myAdapter.getTemple(postition));
         startActivity(intent);
     }
 
@@ -92,5 +88,4 @@ public class Restaurants extends AppCompatActivity implements RestaurantsListene
     public void onItemLongClick(View view, int postition) {
 
     }
-
 }
