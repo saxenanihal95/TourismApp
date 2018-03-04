@@ -49,6 +49,50 @@
           "status": 2
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:808342687335:android:775681a5ce9088f1",
+        "android_client_info": {
+          "package_name": "com.somesh.android.bhopaldarshan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "808342687335-ab6mj23tm2ihg46gbo8r2trjd09l1g97.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.somesh.android.bhopaldarshan",
+            "certificate_hash": "d2dda69c5edff10958bb85754ace6251f147026c"
+          }
+        },
+        {
+          "client_id": "808342687335-6ibl0t1jocdh07tj75mgnbcp056lgo2v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChWlPcE3Km3mpGlu8HVuYrBf4qW8e33Ho"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "808342687335-6ibl0t1jocdh07tj75mgnbcp056lgo2v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
     }
   ],
   "configuration_version": "1"
